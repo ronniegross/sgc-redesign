@@ -11,6 +11,7 @@ const Wrapper = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: center;
+        /* background-color: pink; */
     }
     .skydive-info-box {
         margin: 30px;
@@ -23,6 +24,7 @@ const Wrapper = styled.div`
         /* border: 1px solid #888888; */
         /* box-shadow: 2px 2px #888888; */
         box-shadow: 1px 1px 2px 2px #DEDEDE;
+        /* height: 150px; */
     }
 `
 

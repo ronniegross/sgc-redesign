@@ -42,3 +42,8 @@ h2 {
 .question-answer {
     text-align: left;
 }
+
+.view-more-prices {
+    text-decoration: underline;
+    cursor: pointer;
+}
