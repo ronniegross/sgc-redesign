@@ -17,3 +17,10 @@ h1 {
     font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
     color: #3D3D3D;
 }
+
+p {
+    font-size: 16px;
+    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+    color: #3D3D3D;
+    margin: 0 70px 0 70px;
+}
