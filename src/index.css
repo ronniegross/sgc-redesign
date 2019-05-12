@@ -16,11 +16,29 @@ h1 {
     font-size: 22px;
     font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
     color: #3D3D3D;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     font-size: 16px;
-    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+    /* font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue"; */
+    font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
     color: #3D3D3D;
-    margin: 0 70px 0 70px;
+    /* margin: 0 70px 0 70px; */
+    margin: 0;
+    padding: 0;
+    
+}
+
+h2 {
+    font-size: 18px;
+    font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
+    color: #2A6523;
+    margin: 0;
+    padding: 0;
+}
+
+.question-answer {
+    text-align: left;
 }

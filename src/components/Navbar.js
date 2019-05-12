@@ -17,13 +17,21 @@ const Wrapper = styled.div`
         background-color: #2A6523;
         height: 75px;
     }
-    li {
+    a {
         /* background-color: pink; */
         font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
         font-size: 20px;
         color: white;
         padding: 10px;
         cursor: pointer;
+        text-decoration: none;
+    }
+    li {
+        padding: 10px;
+    }
+    .nav-button {
+        border: 2px white solid;
+        border-radius: 5px;
     }
 `
 
@@ -33,13 +41,13 @@ export default class Navbar extends Component {
             <Wrapper>
                 <div>
                     <ul>
-                        <li><Link to={'/'}></Link>About</li>
-                        <li><Link to={'/firsttimejumpers'}></Link>First Time Jumpers</li>
-                        <li><Link to={'/experiencedjumpers'}></Link>Experienced Jumpers</li>
-                        <li><Link to={'/pricing'}></Link>Pricing</li>
-                        <li><Link to={'/FAQs'}></Link>FAQs</li>
-                        <li><Link to={'/bookaskydive'}></Link>Book a Skydive</li>
-                        <li><Link to={'/contact'}></Link>Contact</li>
+                        <li><Link to={'/'}>About</Link></li>
+                        <li><Link to={'/firsttimejumpers'}>First Time Jumpers</Link></li>
+                        <li><Link to={'/experiencedjumpers'}>Experienced Jumpers</Link></li>
+                        <li><Link to={'/pricing'}>Pricing</Link></li>
+                        <li><Link to={'/FAQs'}>FAQs</Link></li>
+                        <li className="nav-button"><Link to={'/bookaskydive'}>Book a Skydive</Link></li>
+                        <li className="nav-button"><Link to={'/contact'}>Contact</Link></li>
                     </ul>
                 </div>
             </Wrapper>
