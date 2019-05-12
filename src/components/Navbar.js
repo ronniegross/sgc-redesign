@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     flex-direction: row; */
     /* justify-content: space-around; */
     ul {
-        margin-bottom: 30px;
+        margin: 0 0 30px 0;
         padding: 0;
         display: flex;
         flex-direction: row;
@@ -22,6 +22,8 @@ const Wrapper = styled.div`
         font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
         font-size: 20px;
         color: white;
+        padding: 10px;
+        cursor: pointer;
     }
 `
 
@@ -31,13 +33,13 @@ export default class Navbar extends Component {
             <Wrapper>
                 <div>
                     <ul>
-                        <li>About</li>
-                        <li>First Time Jumpers</li>
-                        <li>Experienced Jumpers</li>
-                        <li>Pricing</li>
-                        <li>FAQs</li>
-                        <li>Book a Skydive</li>
-                        <li>Contact</li>
+                        <li><Link to={'/'}></Link>About</li>
+                        <li><Link to={'/firsttimejumpers'}></Link>First Time Jumpers</li>
+                        <li><Link to={'/experiencedjumpers'}></Link>Experienced Jumpers</li>
+                        <li><Link to={'/pricing'}></Link>Pricing</li>
+                        <li><Link to={'/FAQs'}></Link>FAQs</li>
+                        <li><Link to={'/bookaskydive'}></Link>Book a Skydive</li>
+                        <li><Link to={'/contact'}></Link>Contact</li>
                     </ul>
                 </div>
             </Wrapper>

@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+    font-size: 22px;
+    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+    color: #3D3D3D;
+}
