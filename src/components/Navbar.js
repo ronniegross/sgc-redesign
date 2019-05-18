@@ -6,6 +6,8 @@ const Wrapper = styled.div`
     /* display: flex;
     flex-direction: row; */
     /* justify-content: space-around; */
+    /* margin: 0;
+    padding: 0; */
     ul {
         margin: 0 0 30px 0;
         padding: 0;
@@ -36,10 +38,57 @@ const Wrapper = styled.div`
 `
 
 export default class Navbar extends Component {
+
+    // constructor(props) {
+    //     super(props);
+
+    //     this.state = {};
+
+    //     this.handleScroll = this.handleScroll.bind(this);
+    // }
+
+    // handleScroll() {
+    //     this.setState({ scroll: window.scrollY });
+    // }
+
+    // componentDidMount() {
+    //     const el = document.querySelector('nav');
+    //     this.setState({ top: el.offsetTop, height: el.offsetHeight });
+    //     window.addEventListener('scroll', this.handleScroll);
+    // }
+
+    // componentDidUpdate() {
+    //     this.state.scroll > this.state.top ?
+    //         document.body.style.paddingTop = `${this.state.height}px` :
+    //         document.body.style.paddingTop = 0;
+    // }
+
+    // state = {
+    // isNavBarStickied: false,
+    // handleScroll: this.handleScroll.bind(this)
+    // }
+
+    // handleScroll() {
+    //     this.setState({ scroll: window.scrollY });
+    // }
+
+    // componentDidMount() {
+    //     const el = document.querySelector('nav');
+    //     this.setState({ top: el.offsetTop, height: el.offsetHeight });
+    //     window.addEventListener('scroll', this.handleScroll);
+    // }
+
+    // componentDidUpdate() {
+    //     this.state.scroll > this.state.top ?
+    //         document.body.style.paddingTop = `${this.state.height}px` :
+    //         document.body.style.paddingTop = 0;
+    // }
+
     render() {
         return (
             <Wrapper>
-                <div>
+                {/* <nav className={this.state.scroll > this.state.top ? "fixed-nav" : ""}> */}
+                <nav>
                     <ul>
                         <li><Link to={'/'}>About</Link></li>
                         <li><Link to={'/firsttimejumpers'}>First Time Jumpers</Link></li>
@@ -49,7 +98,7 @@ export default class Navbar extends Component {
                         <li className="nav-button"><Link to={'/bookaskydive'}>Book a Skydive</Link></li>
                         <li className="nav-button"><Link to={'/contact'}>Contact</Link></li>
                     </ul>
-                </div>
+                </nav>
             </Wrapper>
         )
     }

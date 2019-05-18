@@ -5,11 +5,25 @@ const Wrapper = styled.div`
     .static-line-pic {
         /* width: 200px; */
         /* height: 140px; */
+        /* width: 100%; */
+        /* object-fit: cover;
+        object-fit: contain; */
+        /* width: 500px;
+        height: 350px;
+        object-fit: cover; */
         width: 100%;
+        height: auto;
     }
     .pic-holder {
         /* background-color: blue; */
-        margin: 30px;
+        /* margin: 30px; */
+    }
+    img {
+        /* width: 500px;
+        height: 350px;
+        object-fit: cover; */
+        width: 100%;
+        
     }
 `
 

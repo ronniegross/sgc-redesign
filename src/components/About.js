@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Slideshow from './Slideshow'
+import QuickLinksBox from './QuickLinksBox.js'
 
 const Wrapper = styled.div`
     display: flex;
@@ -12,16 +13,6 @@ const Wrapper = styled.div`
         flex-direction: row;
         justify-content: space-around;
     }
-    .quick-link-box {
-        /* background-color: pink; */
-        background-color: white;
-        width: 260px;
-        height: 150px;
-        border-radius: 5px;
-        /* border: 1px solid #888888; */
-        /* box-shadow: 2px 2px #888888; */
-        box-shadow: 1px 1px 2px 2px #DEDEDE;
-    }
     .slideshow-container {
         width: 60%;
         margin: 0 auto;
@@ -29,7 +20,40 @@ const Wrapper = styled.div`
     .history-container {
         margin: 0 70px 0 70px;
     }
+    h1 {
+        margin-top: 30px;
+    }
+    .legend-title {
+        margin-bottom: 30px;
+    }
 `
+
+const TandemInfo = {
+    title: "Tandem Program",
+    info: "Looking to make your first skydive? Start here!"
+}
+
+const Tandem = () => {
+    return <QuickLinksBox quickLink={TandemInfo} />
+}
+
+const StaffInfo = {
+    title: "Staff",
+    info: "Meet the people who will be curating your once in a life time experience."
+}
+
+const Staff = () => {
+    return <QuickLinksBox quickLink={StaffInfo} />
+}
+
+const StaticLineInfo= {
+    title: "Static Line Program",
+    info: "Learn how to become a licensed skydiver. Classes held weekly."
+}
+
+const StaticLine = () => {
+    return <QuickLinksBox quickLink={StaticLineInfo} />
+}
 
 export default class About extends Component {
     render() {
@@ -38,7 +62,10 @@ export default class About extends Component {
                 <div>
                     <h1>Thinking about making your first skydive? Check out our quick links to learn more!</h1>
                     <div className="quick-link-box-container">
-                        <div className="tandem-program quick-link-box">
+                        <QuickLinksBox quickLink={TandemInfo}/>
+                        <QuickLinksBox quickLink={StaffInfo}/>
+                        <QuickLinksBox quickLink={StaticLineInfo}/>
+                        {/* <div className="tandem-program quick-link-box">
 
                         </div>
                         <div className="staff quick-link-box">
@@ -46,9 +73,9 @@ export default class About extends Component {
                         </div>
                         <div className="static-line-program quick-link-box">
 
-                        </div>
+                        </div> */}
                     </div>
-                    <h1>The legend of Skydive Greene County</h1>
+                    <h1 className="legend-title">The legend of Skydive Greene County</h1>
                     <div className="slideshow-container">
                         <Slideshow />
                     </div>
