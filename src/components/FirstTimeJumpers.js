@@ -13,21 +13,23 @@ const Wrapper = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* background-color: pink; */
     }
     .skydive-info-box {
         margin: 30px;
-        /* background-color: pink; */
         padding: 30px;
         background-color: white;
-        /* width: 260px; */
-        /* height: 150px; */
         border-radius: 5px;
-        /* border: 1px solid #888888; */
-        /* box-shadow: 2px 2px #888888; */
         box-shadow: 1px 1px 2px 2px #DEDEDE;
-        /* height: 150px; */
-        /* width: 50%; */
+    }
+    @media (max-width: 800px) {
+        .skydive-info-box {
+            margin: 20px;
+        }
+    }
+    @media (max-width: 700px) {
+        .first-time-skydive-container {
+            flex-direction: column;
+        }
     }
 `
 const TandemData = {

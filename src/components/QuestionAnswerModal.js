@@ -3,12 +3,38 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
     .pic-holder {
-        /* width: 100%; */
+        width: 100%;
         /* object-fit: cover; */
         /* width: 100px; */
     }
-    .img-pic {
+    /* .img-pic {
         width: 50%;
+    } */
+`
+
+const Pic = styled.img`
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    @media (max-width: 1200px) {
+        width: 400px;
+        height: 300px;
+    }
+    @media (max-width: 1140px) {
+        width: 350px;
+        height: 300px;
+    }
+    @media (max-width: 900px) {
+        width: 300px;
+        height: 275px;
+    }
+    @media (max-width: 800px) {
+        width: 250px;
+        height: 225px;
+    }
+    @media (max-width: 700px) {
+        width: 400px;
+        height: 300px;
     }
 `
 
@@ -22,13 +48,13 @@ export default class QuestionAnswerModal extends Component {
             return ({ viewMore: !state.viewMore })
         })
     }
-    
+
     render() {
         return (
             <Wrapper>
                 <h1>{this.props.info.title}</h1>
                 <div className="pic-holder">
-                    <img className="img-pic" src={this.props.info.pic} alt="skydive pic"></img>
+                    <Pic className="img-pic" src={this.props.info.pic} alt="skydive pic"></Pic>
                 </div>
                 {
                     this.state.viewMore ?
