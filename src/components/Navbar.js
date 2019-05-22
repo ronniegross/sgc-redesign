@@ -155,6 +155,7 @@ export default class Navbar extends Component {
                         </ul>
                     }
                 /> */}
+                
                 <div className="mobile-menu">
                     { 
                         this.state.displayMobileExitIcon ?
