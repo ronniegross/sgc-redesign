@@ -29,6 +29,8 @@ const Wrapper = styled.div`
     @media (max-width: 500px) {
         .quick-link-box-container {
             flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
         }
     }
 `
