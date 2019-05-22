@@ -26,6 +26,11 @@ const Wrapper = styled.div`
     .legend-title {
         margin-bottom: 30px;
     }
+    @media (max-width: 500px) {
+        .quick-link-box-container {
+            flex-direction: column;
+        }
+    }
 `
 
 const TandemInfo = {
