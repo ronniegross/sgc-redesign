@@ -50,6 +50,7 @@ const Wrapper = styled.div`
     .navbar-exit {
         width: 20px;
         height: 20px;
+        /* cursor: pointer; */
         /* margin: 0 auto; */
         /* margin: 30px 0 30px 0; */
     }
@@ -58,14 +59,23 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center; */
-        margin: 0 auto;
+        /* margin: 0 auto; */
         align-items: start;
+        display: none;
     }
     .mobile-menu ul {
         background-color: white;
         flex-direction: column;
-
-        margin: 80px 0 100px 0;
+        align-content: start;
+        justify-content: start;
+        /* margin: 80px 0 100px 0; */
+    }
+    .mobile-menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 175px; 
     }
     .mobile-menu a {
         color: #3D3D3D;
@@ -73,6 +83,7 @@ const Wrapper = styled.div`
     .mobile-icon {
         /* margin: 0 auto; */
         margin: 15px 0 10px 10px;
+        cursor: pointer;
     }
     @media (max-width: 1100px) {
         li {
@@ -96,6 +107,9 @@ const Wrapper = styled.div`
             display: none;
         }
         .navbar-toggle {
+            display: flex;
+        }
+        .mobile-menu {
             display: flex;
         }
 
@@ -183,7 +197,7 @@ export default class Navbar extends Component {
                     }
                 /> */}
                 
-                <div className="mobile-menu">
+                <div className="mobile-menu-container">
                     { 
                         this.state.displayMobileExitIcon ?
                             <div className="navbar-toggle mobile-icon" onClick={this.toggleMobileDropDown}><img className="navbar-exit" src="https://i.imgur.com/ssmtzqs.png"  alt="mobile menu exit" /></div>
@@ -192,7 +206,7 @@ export default class Navbar extends Component {
                     {
                         this.state.isMobileDropDownTriggered ?
                             <nav className="mobile-menu">
-                                <ul className="mobile-menu">
+                                <ul className="mobile-menu-list">
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown}><Link to={'/'}>About</Link></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/firsttimejumpers'}>First Time Jumpers</Link></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/experiencedjumpers'}>Experienced Jumpers</Link></li>
