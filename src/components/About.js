@@ -26,7 +26,12 @@ const Wrapper = styled.div`
     .legend-title {
         margin-bottom: 30px;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 850px) {
+        .quick-links-title {
+            margin: 30px;
+        }
+    }
+    @media (max-width: 700px) {
         .quick-link-box-container {
             flex-direction: column;
             align-items: center;
@@ -67,7 +72,7 @@ export default class About extends Component {
         return (
             <Wrapper>
                 <div>
-                    <h1>Thinking about making your first skydive? Check out our quick links to learn more!</h1>
+                    <h1 className="quick-links-title">Thinking about making your first skydive? Check out our quick links to learn more!</h1>
                     <div className="quick-link-box-container">
                         <QuickLinksBox quickLink={TandemInfo}/>
                         <QuickLinksBox quickLink={StaffInfo}/>
