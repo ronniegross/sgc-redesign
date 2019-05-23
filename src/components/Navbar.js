@@ -85,6 +85,9 @@ const Wrapper = styled.div`
         margin: 15px 0 10px 10px;
         cursor: pointer;
     }
+    .mobile-menu-container {
+        display: none;
+    }
     @media (max-width: 1100px) {
         li {
             padding: 5px;
@@ -112,7 +115,10 @@ const Wrapper = styled.div`
         .mobile-menu {
             display: flex;
         }
-
+        .mobile-menu-container {
+            display: flex;
+            flex-direction: column;
+        }
     }
 `
 
