@@ -10,6 +10,15 @@ const Wrapper = styled.div`
     /* .img-pic {
         width: 50%;
     } */
+    h2 {
+        margin-top: 10px;
+    }
+    p {
+        margin-top: 4px;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
 `
 
 const Pic = styled.img`

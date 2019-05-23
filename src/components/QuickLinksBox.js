@@ -14,7 +14,8 @@ const Wrapper = styled.div`
         margin: 0 20px 20px 20px;
     }
     h1 {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        color: #2A6523;
     }
 `
 
