@@ -38,14 +38,41 @@ const Wrapper = styled.div`
     }
     .navbar-toggle {
         display: none;
+        width: 30px;
+        /* margin: 30px 0 30px 0; */
+        /* margin: 0 auto; */
+        /* padding: 30px 0 30px 0; */
+        /* margin: auto; */
+    }
+    /* img .navbar-toggle {
+        margin: auto;
+    } */
+    .navbar-exit {
+        width: 20px;
+        height: 20px;
+        /* margin: 0 auto; */
+        /* margin: 30px 0 30px 0; */
+    }
+    .mobile-menu {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        margin: 0 auto;
+        align-items: start;
     }
     .mobile-menu ul {
         background-color: white;
         flex-direction: column;
-        margin: 70px 0 100px 0;
+
+        margin: 80px 0 100px 0;
     }
     .mobile-menu a {
         color: #3D3D3D;
+    }
+    .mobile-icon {
+        /* margin: 0 auto; */
+        margin: 15px 0 10px 10px;
     }
     @media (max-width: 1100px) {
         li {
@@ -69,7 +96,7 @@ const Wrapper = styled.div`
             display: none;
         }
         .navbar-toggle {
-            display: inline;
+            display: flex;
         }
 
     }
@@ -159,8 +186,8 @@ export default class Navbar extends Component {
                 <div className="mobile-menu">
                     { 
                         this.state.displayMobileExitIcon ?
-                            <div className="navbar-toggle" onClick={this.toggleMobileDropDown}><img className="navbar-toggle" src="https://img.icons8.com/cotton/2x/delete-sign--v2.png"  alt="mobile menu trigger" /></div>
-                            : <div className="navbar-exit" onClick={this.toggleMobileDropDown}><img className="navbar-exit"  src="https://i.imgur.com/I34tvzm.png" alt="mobile menu exit" /></div>
+                            <div className="navbar-toggle mobile-icon" onClick={this.toggleMobileDropDown}><img className="navbar-exit" src="https://i.imgur.com/ssmtzqs.png"  alt="mobile menu exit" /></div>
+                            : <div className="navbar-exit mobile-icon" onClick={this.toggleMobileDropDown}><img className="navbar-toggle"  src="https://i.imgur.com/I34tvzm.png" alt="mobile menu trigger" /></div>
                     }
                     {
                         this.state.isMobileDropDownTriggered ?

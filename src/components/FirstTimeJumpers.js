@@ -31,6 +31,11 @@ const Wrapper = styled.div`
             flex-direction: column;
         }
     }
+    @media (max-width: 400px) {
+        .first-time-skydive-container {
+            width: 90%;
+        }
+    }
 `
 const TandemData = {
     title: "Tandem Skydive",

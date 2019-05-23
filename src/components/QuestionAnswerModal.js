@@ -36,6 +36,11 @@ const Pic = styled.img`
         width: 400px;
         height: 300px;
     }
+    @media (max-width: 400px) {
+        width: 230px;
+        height: 150px;
+        /* margin: 0 100px 0 0; */
+    }
 `
 
 export default class QuestionAnswerModal extends Component {
