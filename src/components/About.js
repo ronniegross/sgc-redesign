@@ -30,6 +30,9 @@ const Wrapper = styled.div`
     a {
         text-decoration: none;
     }
+    .pic-title {
+        margin-bottom: 15px;
+    }
     @media (max-width: 850px) {
         .quick-links-title {
             margin: 30px;
@@ -42,6 +45,10 @@ const Wrapper = styled.div`
             /* justify-content: center; */
         }
     }
+`
+
+const Pic = styled.img`
+    width: 90%;
 `
 
 const TandemInfo = {
@@ -91,6 +98,8 @@ export default class About extends Component {
 
                         </div> */}
                     </div>
+                    <h1 className="pic-title">Pic of the Week</h1>
+                    <Pic src="https://www.skydiveohio.com/wp-content/uploads/G0041216-2-1-3000x1734.jpg" alt="pic of the week"></Pic>
                     <h1 className="legend-title">The legend of Skydive Greene County</h1>
                     <div className="slideshow-container">
                         <Slideshow />

@@ -50,6 +50,7 @@ const Wrapper = styled.div`
     .navbar-exit {
         width: 20px;
         height: 20px;
+        margin-left: 5px;
         /* cursor: pointer; */
         /* margin: 0 auto; */
         /* margin: 30px 0 30px 0; */
@@ -62,6 +63,7 @@ const Wrapper = styled.div`
         /* margin: 0 auto; */
         align-items: start;
         display: none;
+        margin-left: 10px;
     }
     .mobile-menu ul {
         background-color: white;
@@ -82,7 +84,7 @@ const Wrapper = styled.div`
     }
     .mobile-icon {
         /* margin: 0 auto; */
-        margin: 15px 0 10px 10px;
+        margin: 15px 0 10px 15px;
         cursor: pointer;
     }
     .mobile-menu-container {
@@ -207,7 +209,7 @@ export default class Navbar extends Component {
                     { 
                         this.state.displayMobileExitIcon ?
                             <div className="navbar-toggle mobile-icon" onClick={this.toggleMobileDropDown}><img className="navbar-exit" src="https://i.imgur.com/ssmtzqs.png"  alt="mobile menu exit" /></div>
-                            : <div className="navbar-exit mobile-icon" onClick={this.toggleMobileDropDown}><img className="navbar-toggle"  src="https://i.imgur.com/I34tvzm.png" alt="mobile menu trigger" /></div>
+                            : <div className="navbar-exit mobile-icon" onClick={this.toggleMobileDropDown}><img className="navbar-toggle"  src="https://i.imgur.com/l4qViTz.png" alt="mobile menu trigger" /></div>
                     }
                     {
                         this.state.isMobileDropDownTriggered ?
