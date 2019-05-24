@@ -14,6 +14,7 @@ const Wrapper = styled.div`
     h3 {
         text-decoration: underline;
         text-align: start;
+        margin: 10px 0 10px 0;
     }
 `
 
