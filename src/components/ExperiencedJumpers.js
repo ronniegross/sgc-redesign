@@ -35,7 +35,10 @@ const Wrapper = styled.div`
         width: 90%;
         margin: 20px;
     }
-    h1 {
+    /* h1 {
+        margin: 20px;
+    } */
+    .title {
         margin: 20px;
     }
     .facilities-title {
@@ -114,7 +117,7 @@ export default class ExperiencedJumpers extends Component {
                         </div>
                     </div>
                 </div>
-                <h1>Aircraft</h1>
+                <h1 className="aircraft-title title">Aircraft</h1>
                 <div className="pic-holder">
                     <Pic src="https://skydivekc.com/images/site/Skydiving-Aircraft.jpg" alt="aircraft"></Pic>
                 </div>
@@ -122,7 +125,7 @@ export default class ExperiencedJumpers extends Component {
                 <p>Lorem ipsum dolor amet cloud bread artisan vinyl bicycle rights. Air plant la croix yuccie, kickstarter VHS williamsburg readymade bushwick cornhole beard tumeric tbh. Distillery pok pok vape tousled paleo messenger bag. Narwhal iceland adaptogen, vape chillwave actually tousled synth crucifix kogi raw denim meh. Health goth PBR&B hell of tilde portland fixie artisan hexagon polaroid tattooed bitters. Kogi microdosing helvetica pug crucifix craft beer.
                 </p>
                 </div>
-                <h1 className="facilities-title">Facilities</h1>
+                <h1 className="facilities-title title">Facilities</h1>
                 <div className="pic-holder">
                     <Pic src="https://www.skydiveohio.com/wp-content/uploads/2013/01/packing_hanger.jpg" alt="amenities"></Pic>
                 </div>
