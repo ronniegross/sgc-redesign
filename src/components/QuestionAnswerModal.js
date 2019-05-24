@@ -19,6 +19,9 @@ const Wrapper = styled.div`
     h1 {
         margin-bottom: 10px;
     }
+    .view-more-prices {
+        margin-top: 15px;
+    }
 `
 
 const Pic = styled.img`
@@ -93,7 +96,7 @@ export default class QuestionAnswerModal extends Component {
                                 <h2>{this.props.info.q5}</h2>
                                 <p>{this.props.info.a5}</p>
                             </div>
-                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view fewer prices</p>
+                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view fewer questions</p>
                         </div>
                         :
                         <div className="two-questions">
@@ -105,7 +108,7 @@ export default class QuestionAnswerModal extends Component {
                                 <h2>{this.props.info.q2}</h2>
                                 <p>{this.props.info.a2}</p>
                             </div>
-                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view more prices</p>
+                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view more questions</p>
                         </div>
                 }
             </Wrapper>
