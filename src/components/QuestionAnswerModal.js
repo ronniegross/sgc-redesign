@@ -24,6 +24,9 @@ const Wrapper = styled.div`
     .view-more-prices {
         margin-top: 15px;
     }
+    .price-question {
+        display: inline;
+    }
 `
 
 const Pic = styled.img`
@@ -122,7 +125,8 @@ const BigPic = styled.img`
 export default class QuestionAnswerModal extends Component {
     state = {
         viewMore: false,
-        bigTile: false
+        bigTile: false,
+        pricing: false
     }
 
     triggerViewMorePrices = () => {
@@ -132,7 +136,7 @@ export default class QuestionAnswerModal extends Component {
     }
 
     componentDidMount = () => {
-        this.setState({ bigTile: this.props.info.bigTile })
+        this.setState({ bigTile: this.props.info.bigTile, pricing: this.props.info.pricing })
     }
 
     render() {
@@ -172,7 +176,12 @@ export default class QuestionAnswerModal extends Component {
                                 <h2>{this.props.info.q5}</h2>
                                 <p>{this.props.info.a5}</p>
                             </div>
-                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view fewer questions</p>
+                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view fewer
+                                {this.props.info.pricing ?
+                                    <p className="price-question"> prices</p>
+                                    : <p className="price-question"> questions</p>
+                                }
+                            </p>
                         </div>
                         :
                         <div className="two-questions">
@@ -184,7 +193,12 @@ export default class QuestionAnswerModal extends Component {
                                 <h2>{this.props.info.q2}</h2>
                                 <p>{this.props.info.a2}</p>
                             </div>
-                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view more questions</p>
+                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view more
+                            {this.props.info.pricing ?
+                                    <p className="price-question"> prices</p>
+                                    : <p className="price-question"> questions</p>
+                            }
+                            </p>
                         </div>
                 }
             </Wrapper>

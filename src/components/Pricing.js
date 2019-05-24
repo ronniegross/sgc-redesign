@@ -36,6 +36,7 @@ const Wrapper = styled.div`
 const TandemData = {
     title: "Tandem Skydive",
     pic: "https://skydiveparacletexp.com/wp-content/uploads/2016/11/DSC04180.jpg",
+    pricing: true,
     q1: "What is a tandem skydive?",
     a1: "Marfa VHS chicharrones ugh tumeric. Knausgaard irony slow",
     q2: "Question2",
@@ -55,6 +56,7 @@ const Tandem = () => {
 const StaticLineData = {
     title: "Static Line Skydive",
     pic: "http://www.skydiveparys.co.za/images/site/static-line-main-image-main.jpg",
+    pricing: true,
     q1: "What is a static line skydive?",
     a1: "Marfa VHS chicharrones ugh tumeric. Knausgaard irony slow",
     q2: "Question2",
@@ -73,8 +75,9 @@ const StaticLine = () => {
 
 
 const FunJumperPricingData = {
-    title: "Fun Jumper Pricing",
+    title: "Experienced Jumper",
     pic: "https://www.skydivelongisland.com/images/article/Learn-to-Freefly.jpg",
+    pricing: true,
     bigTile: true,
     q1: "Low Pass",
     a1: "Marfa VHS chicharrones ugh tumeric. Knausgaard irony slow",
