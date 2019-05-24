@@ -8,6 +8,7 @@ import FirstTimeJumpers from './components/FirstTimeJumpers.js'
 import Header from './components/Header.js'
 import ExperiencedJumpers from './components/ExperiencedJumpers.js'
 import FAQs from './components/FAQ.js'
+import Footer from './components/Footer.js'
 // import QuestionAnswerModal from './components/QuestionAnswerModal.js'
 
 
@@ -24,6 +25,7 @@ class App extends Component {
                         <Route path="/experiencedjumpers" component={ExperiencedJumpers} />
                         <Route path="/FAQs" component={FAQs} />
                     </Switch>
+                    <Footer />
                 </div>
             </HashRouter>
         );
