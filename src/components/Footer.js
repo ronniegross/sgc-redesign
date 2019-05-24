@@ -16,7 +16,7 @@ export default class Footer extends Component {
                 <div className="address">
                     <h1>177 South Monroe Siding</h1>
                     <h1>Xenia, Ohio 45385</h1>
-                    <h1>#937-372-0700</h1>
+                    <h1># 937-372-0700</h1>
                 </div>
             </Wrapper>
         )

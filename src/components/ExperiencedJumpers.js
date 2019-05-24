@@ -31,7 +31,7 @@ const Wrapper = styled.div`
         justify-content: center;
         align-items: center;
     }
-    p {
+    .aircraft-facilities-text {
         width: 90%;
         margin: 20px;
     }
@@ -122,7 +122,7 @@ export default class ExperiencedJumpers extends Component {
                     <Pic src="https://skydivekc.com/images/site/Skydiving-Aircraft.jpg" alt="aircraft"></Pic>
                 </div>
                 <div className="text-holder">
-                <p>Lorem ipsum dolor amet cloud bread artisan vinyl bicycle rights. Air plant la croix yuccie, kickstarter VHS williamsburg readymade bushwick cornhole beard tumeric tbh. Distillery pok pok vape tousled paleo messenger bag. Narwhal iceland adaptogen, vape chillwave actually tousled synth crucifix kogi raw denim meh. Health goth PBR&B hell of tilde portland fixie artisan hexagon polaroid tattooed bitters. Kogi microdosing helvetica pug crucifix craft beer.
+                <p className="aircraft-facilities-text">Lorem ipsum dolor amet cloud bread artisan vinyl bicycle rights. Air plant la croix yuccie, kickstarter VHS williamsburg readymade bushwick cornhole beard tumeric tbh. Distillery pok pok vape tousled paleo messenger bag. Narwhal iceland adaptogen, vape chillwave actually tousled synth crucifix kogi raw denim meh. Health goth PBR&B hell of tilde portland fixie artisan hexagon polaroid tattooed bitters. Kogi microdosing helvetica pug crucifix craft beer.
                 </p>
                 </div>
                 <h1 className="facilities-title title">Facilities</h1>
@@ -130,7 +130,7 @@ export default class ExperiencedJumpers extends Component {
                     <Pic src="https://www.skydiveohio.com/wp-content/uploads/2013/01/packing_hanger.jpg" alt="amenities"></Pic>
                 </div>
                 <div className="text-holder">
-                <p>3 wolf moon umami godard, street art everyday carry poutine tumblr unicorn keffiyeh try-hard. Fanny pack live-edge seitan lomo kinfolk cred, enamel pin blog chambray disrupt gentrify. Hoodie mustache chillwave selfies, humblebrag air plant asymmetrical umami banh mi snackwave. Tumeric williamsburg polaroid, raw denim small batch hoodie jianbing meggings sartorial.</p>
+                <p className="aircraft-facilities-text"> 3 wolf moon umami godard, street art everyday carry poutine tumblr unicorn keffiyeh try-hard. Fanny pack live-edge seitan lomo kinfolk cred, enamel pin blog chambray disrupt gentrify. Hoodie mustache chillwave selfies, humblebrag air plant asymmetrical umami banh mi snackwave. Tumeric williamsburg polaroid, raw denim small batch hoodie jianbing meggings sartorial.</p>
                 </div>
             </Wrapper>
         )
