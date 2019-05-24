@@ -6,6 +6,8 @@ const Wrapper = styled.div`
         width: 100%;
         /* object-fit: cover; */
         /* width: 100px; */
+        /* width: 90%;
+        background-color: blue; */
     }
     /* .img-pic {
         width: 50%;
@@ -55,9 +57,72 @@ const Pic = styled.img`
     }
 `
 
+const BigPic = styled.img`
+    width: 1125px;
+    height: 400px;
+    object-fit: cover;
+    @media (max-width: 1200px) {
+        width: 1000px;
+        height: 400px;
+    }
+    @media (max-width: 1100px) {
+        width: 800px;
+        height: 400px;
+    }
+    @media (max-width: 900px) {
+        width: 650px;
+        height: 400px;
+    }
+    @media (max-width: 750px) {
+        width: 550px;
+        height: 400px;
+    }
+    @media (max-width: 700px) {
+        width: 400px;
+        height: 300px;
+    }
+    @media (max-width: 400px) {
+        width: 230px;
+        height: 150px;
+        /* margin: 0 100px 0 0; */
+    }
+`
+
+// const Pic = styled.img`
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     /* @media (max-width: 1200px) {
+//         width: 400px;
+//         height: 300px;
+//     }
+//     @media (max-width: 1140px) {
+//         width: 350px;
+//         height: 300px;
+//     }
+//     @media (max-width: 900px) {
+//         width: 300px;
+//         height: 275px;
+//     }
+//     @media (max-width: 800px) {
+//         width: 250px;
+//         height: 225px;
+//     }
+//     @media (max-width: 700px) {
+//         width: 400px;
+//         height: 300px;
+//     }
+//     @media (max-width: 400px) {
+//         width: 230px;
+//         height: 150px;
+//         /* margin: 0 100px 0 0; */
+//     } */
+// `
+
 export default class QuestionAnswerModal extends Component {
     state = {
         viewMore: false,
+        bigTile: false
     }
 
     triggerViewMorePrices = () => {
@@ -66,13 +131,24 @@ export default class QuestionAnswerModal extends Component {
         })
     }
 
+    componentDidMount = () => {
+        this.setState({ bigTile: this.props.info.bigTile })
+    }
+
     render() {
         return (
             <Wrapper>
                 <h1>{this.props.info.title}</h1>
-                <div className="pic-holder">
-                    <Pic className="img-pic" src={this.props.info.pic} alt="skydive pic"></Pic>
-                </div>
+                {
+                    this.state.bigTile ?
+                        <div className="pic-holder">
+                            <BigPic className="img-pic" src={this.props.info.pic} alt="skydive pic"></BigPic>
+                        </div>
+                        :
+                        <div className="pic-holder">
+                            <Pic className="img-pic" src={this.props.info.pic} alt="skydive pic"></Pic>
+                        </div>
+                }
                 {
                     this.state.viewMore ?
                         <div className="full-list-questions">
