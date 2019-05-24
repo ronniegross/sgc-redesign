@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 // import ResponsiveMenu from 'react-responsive-navbar'
+import ContactModal from './ContactModal.js'
 
 const Wrapper = styled.div`
     /* display: flex;
@@ -31,6 +32,10 @@ const Wrapper = styled.div`
     }
     li {
         padding: 10px;
+        color: white;
+        font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+        font-size: 20px;
+        cursor: pointer;
     }
     .nav-button {
         border: 2px white solid;
@@ -173,13 +178,24 @@ export default class Navbar extends Component {
 
     state = {
         isMobileDropDownTriggered: false,
-        displayMobileExitIcon: false
+        displayMobileExitIcon: false,
+        contactModalDisplayed: false,
     }
 
     toggleMobileDropDown = () => {
         this.setState((state, props) => {
             return ({ isMobileDropDownTriggered: !state.isMobileDropDownTriggered, displayMobileExitIcon: !state.displayMobileExitIcon })
         })
+    }
+
+    triggerContactModal = () => {
+        this.setState(state => {
+            return({ contactModalDisplayed: !state.contactModalDisplayed })
+        })
+    }
+
+    showContactModal = () => {
+        return(<ContactModal />)
     }
 
     render() {
@@ -222,6 +238,7 @@ export default class Navbar extends Component {
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/FAQs'}>FAQs</Link></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/bookaskydive'}>Book a Skydive</Link></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/contact'}>Contact</Link></li>
+                                    {/* <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/contact'}>Contact</Link></li> */}
                                     {/* <li onClick={this.toggleMobileDropDown}><Link to={'/'}> List of Resources </Link></li>
                                     <li onClick={this.toggleMobileDropDown}><Link to={'/map'}> Map </Link></li>
                                     <li onClick={this.toggleMobileDropDown}><Link to={'/links'}> Links </Link></li>
@@ -242,7 +259,13 @@ export default class Navbar extends Component {
                         <li className="regular-nav-item"><Link to={'/pricing'}>Pricing</Link></li>
                         <li className="regular-nav-item"><Link to={'/FAQs'}>FAQs</Link></li>
                         <li className="nav-button regular-nav-item"><Link to={'/bookaskydive'}>Book a Skydive</Link></li>
-                        <li className="nav-button regular-nav-item"><Link to={'/contact'}>Contact</Link></li>
+                        <li onClick={this.triggerContactModal} className="nav-button regular-nav-item">Contact</li>
+                        {
+                            this.state.contactModalDisplayed ? 
+                                <ContactModal />
+                                : null
+                        }
+                        {/* <li className="nav-button regular-nav-item"><Link to={'/contact'}>Contact</Link></li> */}
                     </ul>
                 </nav>
             </Wrapper>
