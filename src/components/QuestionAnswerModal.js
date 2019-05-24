@@ -136,7 +136,7 @@ export default class QuestionAnswerModal extends Component {
     }
 
     componentDidMount = () => {
-        this.setState({ bigTile: this.props.info.bigTile, pricing: this.props.info.pricing })
+        this.setState({ bigTile: this.props.info.bigTile })
     }
 
     render() {
