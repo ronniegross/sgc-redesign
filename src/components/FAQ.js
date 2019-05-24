@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 `
 
 const FunJumperQuestions = {
-    title: "Common Fun Jumper Questions",
+    title: "Common Fun Jumper Questions:",
     q1: "Question1",
     q2: "Question2",
     q3: "Question3",
@@ -15,8 +15,21 @@ const FunJumperQuestions = {
     q5: "Question5",
 }
 
-const Tandem = () => {
+const FunJumper = () => {
     return <FAQModal funJumper={FunJumperQuestions}/>
+}
+
+const TandemJumperQuestions = {
+    title: "Common First Time Jumper Questions:",
+    q1: "Question1",
+    q2: "Question2",
+    q3: "Question3",
+    q4: "Question4",
+    q5: "Question5",
+}
+
+const TandemJumper = () => {
+    return <FAQModal funJumper={TandemJumperQuestions}/>
 }
 
 export default class FAQ extends Component {
@@ -24,8 +37,8 @@ export default class FAQ extends Component {
         return (
             <Wrapper>
                 <h1>SKYDIVE GREENE COUNTY FAQs </h1>
-                <FAQModal></FAQModal>
-                <FAQModal></FAQModal>
+                <FAQModal info={TandemJumperQuestions}/>
+                <FAQModal info={FunJumperQuestions}/>
             </Wrapper>
         )
     }

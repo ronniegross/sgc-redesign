@@ -22,6 +22,9 @@ const StaffWrapper = styled.div`
     .staff-pic {
         width: 250px;
     }
+    h2 {
+        margin-top: 10px;
+    }
 `
 
 export default class Staff extends Component {
