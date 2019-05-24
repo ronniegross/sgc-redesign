@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Slideshow from './Slideshow'
 import QuickLinksBox from './QuickLinksBox.js'
@@ -25,6 +26,9 @@ const Wrapper = styled.div`
     }
     .legend-title {
         margin-bottom: 30px;
+    }
+    a {
+        text-decoration: none;
     }
     @media (max-width: 850px) {
         .quick-links-title {
@@ -74,9 +78,9 @@ export default class About extends Component {
                 <div>
                     <h1 className="quick-links-title">Thinking about making your first skydive? Check out our quick links to learn more!</h1>
                     <div className="quick-link-box-container">
-                        <QuickLinksBox quickLink={TandemInfo}/>
-                        <QuickLinksBox quickLink={StaffInfo}/>
-                        <QuickLinksBox quickLink={StaticLineInfo}/>
+                        <Link to={'/firsttimejumpers'}><QuickLinksBox quickLink={TandemInfo}/></Link>
+                        <Link to={'/firsttimejumpers'}><QuickLinksBox quickLink={StaffInfo}/></Link>
+                        <Link to={'/firsttimejumpers'}><QuickLinksBox quickLink={StaticLineInfo}/></Link>
                         {/* <div className="tandem-program quick-link-box">
 
                         </div>

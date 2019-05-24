@@ -7,6 +7,7 @@ import About from './components/About.js'
 import FirstTimeJumpers from './components/FirstTimeJumpers.js'
 import Header from './components/Header.js'
 import ExperiencedJumpers from './components/ExperiencedJumpers.js'
+import FAQs from './components/FAQ.js'
 // import QuestionAnswerModal from './components/QuestionAnswerModal.js'
 
 
@@ -21,6 +22,7 @@ class App extends Component {
                         <Route exact path="/" component={About} />
                         <Route path="/firsttimejumpers" component={FirstTimeJumpers} />
                         <Route path="/experiencedjumpers" component={ExperiencedJumpers} />
+                        <Route path="/FAQs" component={FAQs} />
                     </Switch>
                 </div>
             </HashRouter>

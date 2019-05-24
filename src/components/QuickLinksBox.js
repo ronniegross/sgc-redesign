@@ -23,6 +23,12 @@ const Wrapper = styled.div`
             height: 150px;
         }
     }
+    @media (max-width: 700px) {
+        .quick-link-box {
+            width: 260px;
+            height: 125px;
+        }
+    }
 `
 
 export default class QuickLinksBox extends Component {
