@@ -5,6 +5,8 @@ import QuestionAnswerModal from './QuestionAnswerModal.js'
 const Wrapper = styled.div`
     display: flex; 
     flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
     .first-time-skydive-container {
         display: flex;
         flex-direction: row;
@@ -17,6 +19,28 @@ const Wrapper = styled.div`
         border-radius: 5px;
         box-shadow: 1px 1px 2px 2px #DEDEDE;
     }
+    .pic-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        width: 90%;
+        margin: 20px;
+    }
+    h1 {
+        margin: 20px;
+    }
+    .facilities-title {
+        margin-top: 50px;
+    }
     @media (max-width: 800px) {
         .skydive-info-box {
             margin: 20px;
@@ -27,6 +51,12 @@ const Wrapper = styled.div`
             flex-direction: column;
         }
     }
+`
+
+const Pic = styled.img`
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
 `
 
 const PricingData = {
@@ -45,7 +75,7 @@ const PricingData = {
 }
 
 const Pricing = () => {
-    return <QuestionAnswerModal info={PricingData}/>
+    return <QuestionAnswerModal info={PricingData} />
 }
 
 const RulesData = {
@@ -64,7 +94,7 @@ const RulesData = {
 }
 
 const Rules = () => {
-    return <QuestionAnswerModal info={RulesData}/>
+    return <QuestionAnswerModal info={RulesData} />
 }
 
 export default class ExperiencedJumpers extends Component {
@@ -75,14 +105,29 @@ export default class ExperiencedJumpers extends Component {
                 <div className="first-time-skydive-container">
                     <div>
                         <div className="pricing skydive-info-box">
-                            <QuestionAnswerModal info={PricingData}/>
+                            <QuestionAnswerModal info={PricingData} />
                         </div>
                     </div>
                     <div>
                         <div className="rules skydive-info-box">
-                            <QuestionAnswerModal info={RulesData}/>
+                            <QuestionAnswerModal info={RulesData} />
                         </div>
                     </div>
+                </div>
+                <h1>Aircraft</h1>
+                <div className="pic-holder">
+                    <Pic src="https://skydivekc.com/images/site/Skydiving-Aircraft.jpg" alt="aircraft"></Pic>
+                </div>
+                <div className="text-holder">
+                <p>Lorem ipsum dolor amet cloud bread artisan vinyl bicycle rights. Air plant la croix yuccie, kickstarter VHS williamsburg readymade bushwick cornhole beard tumeric tbh. Distillery pok pok vape tousled paleo messenger bag. Narwhal iceland adaptogen, vape chillwave actually tousled synth crucifix kogi raw denim meh. Health goth PBR&B hell of tilde portland fixie artisan hexagon polaroid tattooed bitters. Kogi microdosing helvetica pug crucifix craft beer.
+                </p>
+                </div>
+                <h1 className="facilities-title">Facilities</h1>
+                <div className="pic-holder">
+                    <Pic src="https://www.skydiveohio.com/wp-content/uploads/2013/01/packing_hanger.jpg" alt="amenities"></Pic>
+                </div>
+                <div className="text-holder">
+                <p>3 wolf moon umami godard, street art everyday carry poutine tumblr unicorn keffiyeh try-hard. Fanny pack live-edge seitan lomo kinfolk cred, enamel pin blog chambray disrupt gentrify. Hoodie mustache chillwave selfies, humblebrag air plant asymmetrical umami banh mi snackwave. Tumeric williamsburg polaroid, raw denim small batch hoodie jianbing meggings sartorial.</p>
                 </div>
             </Wrapper>
         )

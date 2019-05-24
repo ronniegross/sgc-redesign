@@ -46,7 +46,7 @@ const Wrapper = styled.div`
 
 const TandemInfo = {
     title: "Tandem Program",
-    info: "Looking to make your first skydive? Start here!"
+    info: "Looking for the thrill of your life? Curious about your first skydive? Start here!"
 }
 
 const Tandem = () => {
@@ -55,7 +55,7 @@ const Tandem = () => {
 
 const StaffInfo = {
     title: "Staff",
-    info: "Meet the people who will be curating your once in a life time experience."
+    info: "Meet the people who will be curating your once in a lifetime experience."
 }
 
 const Staff = () => {
