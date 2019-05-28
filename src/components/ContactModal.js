@@ -39,6 +39,11 @@ const Pic = styled.img`
 `
 
 export default class ContactModal extends Component {
+
+    closeContactModal = () => {
+        
+    }
+
     render() {
         return (
             <Wrapper>
