@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import FAQModal from './FAQModal.js'
+import { Link } from 'react-router-dom'
 
 const Wrapper = styled.div`
     h2 {
@@ -14,6 +15,9 @@ const Wrapper = styled.div`
     /* margin: 30px; */
     .faq-title {
         margin: 40px 0 40px 0;
+    }
+    a {
+        color: #3D3D3D;
     }
 `
 
@@ -40,9 +44,9 @@ const TandemJumperQuestions = {
     q1: "What are your hours of operation?",
     a1: "We are open seven days a week from 9:00am to sunset for your skydiving convenience.",
     q2: "How do I learn to skydive?",
-    a2: "Just pick up the phone and call 937-372-0700. You can talk directly to our friendly and experienced staff that will answer all of your questions and make your appointment for your first tandem skydive. If you would rather, click here to email us.",
+    a2: "Just pick up the phone and call 937-372-0700. You can talk directly to our friendly and experienced staff that will answer all of your questions and make your appointment for your first tandem skydive. If you would rather, click " + <a className="contact-modal-link" href="mailto:info@skydiveohio.com">here </a> + "to email us.",
     q3: "Can I jump by myself the first time?",
-    a3: "We require a Tandem skydive as your first jump.  Aer you make a tandem you than can enroll in our static line course. Tandem skydives allows you to experience freefall and canopy flight while harnessed to an experienced instructor. This is required before enrolling in our Static Line program or AFF program. Static Line jumps will take you up with your jump master and you will leave the aircra attached by a static line that will automatically open your parachute and you will guide the parachute via ground to air communication.",
+    a3: "We require a tandem skydive as your first jump. After you make a tandem, you can then enroll in our static line course. A tandem skydive allows you to experience freefall and canopy flight while harnessed to an experienced instructor. This is required before enrolling in our static line program. During a static line jump, you will be taken up to 3,500 ft with a licensed jump master, and you will leave the aircraft attatched to the plane via a static line, which will pull your parachute for you. For more information regarding our static line program, click here.",
     q4: "Is there an age requirement?",
     a4: "You must be 18, there are no exceptions on this rule. A valid photo ID (drivers license or state ID) is required to jump. There is no maximum age limit, but the minimum age is 18 regardless of parental consent. We have taken people as old as 18 or as young as 80!",
     q5: "Is there a weight limit? Are there any physical requirements?",
@@ -54,17 +58,17 @@ const TandemJumperQuestions = {
     q8: "What type of payment do you accept?",
     a8: "Cash or checks.  We also take Visa and MasterCard.",
     q9: "Do I have to make an appointment?",
-    a9: "Call 937-372-0700 to book your reservation(s) to help us serve you better. On weekends, in particular, we give priority to those who have scheduled with us in advance. We schedule a time for you and/or your group to arrive. That is when we will begin the training process. Your skydive will take place when your training is completed. We also welcome walk in’s at S.G.C. and will work to fit you onto our schedule so you can make a skydive with us.  Students with reservations will always take priority.  There are times when we are to busy to accept walk in’s so a reservation is highly recommended.",
+    a9: "Call 937-372-0700 to book your reservation(s) to help us serve you better. On weekends in particular, we give priority to those who have scheduled with us in advance. We schedule a time for you and/or your group to arrive. That is when we will begin the training process. Your skydive will take place when your training is completed. We also welcome walk-ins at S.G.C. and will work to fit you into our schedule so you can make a skydive with us.  Students with reservations will always take priority.  There are times when we are too busy to accept walk-ins so a reservation is highly recommended.",
     q10: "How long will this take?",
-    a10: "Please plan on spending at least half the day with us. We do everything we can to get you skydiving as quickly as possible and minimize your wait. We understand that you want to jump… and we do too. However, sometimes weather or high winds do get in the way of jumping at your scheduled time and it does slow down the day. This is rare, but we do all we can to help make your jump possible at your scheduled time. Note: Weekdays are oen less busy. We will make every effort to minimize your wait, regardless of when you choose to jump.",
+    a10: "Please plan on spending at least half the day with us. We do everything we can to get you skydiving as quickly as possible and minimize your wait. We understand that you want to jump… and we do too. However, sometimes weather or high winds do get in the way of jumping at your scheduled time and it does slow down the day. This is rare, but we do all we can to help make your jump possible at your scheduled time. Note: Weekdays are often less busy. We will make every effort to minimize your wait, regardless of when you choose to jump.",
     q11: "How long is the training?",
-    a11: "When you first arrive, you will spend 15-20 minutes watching a video and signing the required paperwork. Aer you meet your instructor, they can train you in basic freefall body position, exit procedures, and safety information in 20-30 minutes.",
+    a11: "When you first arrive, you will spend 15-20 minutes watching a video and signing the required paperwork. After you meet your instructor, they can train you in basic freefall body position, exit procedures, and safety information in 20-30 minutes.",
     q12: "Do you offer Discounts & Group Rates?",
     a12: "Group discounts start at 6 people or more. Please contact us at 937-372-0700 for groups of 11 or more to discuss scheduling and deposit requirements.",
     q13: "I am coming out with a group. Can we all jump at the same time?",
     a13: "Smaller groups (3-4) are usually no problem. Please let us know when you check in. We will do whatever we can to accommodate your request. For larger groups, we will work with you to divide the group between plane loads, and will consider your input regarding who jumps on each load.",
     q14: "Can I get a video and/or photographs of my jump?",
-    a14: "Yes, there is an extra cost for a DVD video. All videos are edited and include a pre- and post-jump interview, ride to altitude and of course the freefall and the landing of your skydive. Digital photos are also available for an additional cost with the purchase of a video. Please let us know if you want photos with your video when you schedule your skydive(s). For our full price list click here.",
+    a14: "Yes you can! You may purchase video and pictures individually, or as a bundle. All videos are edited and include a pre and post-jump interview, ride to altitude, freefall and the landing of your skydive. Please let us know if you want video, photos, or both when you schedule your skydive(s). For our full price list click here.",
     q15: "Can we get one video for our whole group?",
     a15: "No, the time/distance gap between jumper exits prevents a camera person from being able to film more than one student at a time.",
     q16: "What altitude is the jump?",
@@ -74,23 +78,23 @@ const TandemJumperQuestions = {
     q18: "What will the skydive feel like?",
     a18: "The sensation of freefall is more like flying than falling, and is both exciting and at the same time liberating. There is no other feeling like it in the world! The canopy flight is quiet and peaceful.",
     q19: "What’s the landing like?",
-    a19: "Most landings are quite so. Landings vary from tip toe so stand-ups to butt slides, with some being harder than normal. Your instructor will brief you on landing procedures and will make every effort to land both of you safely.",
+    a19: "Most landings are quite safe. Landings vary from tip toe to stand-ups to butt slides, with some being harder than normal. Your instructor will brief you on landing procedures and will make every effort to land both of you safely.",
     q20: "What should I wear?",
-    a20: "Dress comfortably for the weather. Jeans and gym shoes are ideal. Shorts are also acceptable on warmer days. No sandals, flip-flops, cowboy boots or any shoes with hooks on them. You will not be permitted to jump without shoes.",
+    a20: "Dress comfortably for the weather. Jeans or athletic clothes, and gym shoes are ideal. Shorts are also acceptable on warmer days. No sandals, flip-flops, cowboy boots or any shoes with hooks on them. You will not be permitted to jump without shoes.",
     q21: "What if the weather forecast is bad?",
     a21: "Please call 937-372-0700 prior to leaving home to check weather conditions. Sometimes the weather will prevent student jumps and we will reschedule you for another day.",
     q22: "What do I need to bring?",
     a22: "A valid photo ID, money and a willingness to have the experience of your life. Skydive Greene County will provide everything else needed for a successful skydive.",
     q23: "Can I bring my own camera with me on the jump?",
-    a23: "No, you and your instructor are much too busy with your skydive to look aer your camera. It very easily may get lost or broken. We offer the skills of highly experienced freefall videographers to record your experience. Spectators are welcome to take photographs.",
+    a23: "No, you and your instructor are much too busy with your skydive to look after your camera. It is highly likely that it will get lost or broken. We offer the skills of highly experienced freefall videographers to record your experience. Spectators are welcome to take photographs.",
     q24: "Can I bring my friends and family to watch?",
     a24: "Definitely YES! We encourage you to share the experience with your friends, family, and co-workers.",
-    q25: "Are gi certificates available?",
-    a25: "Yes, gi certificates are available for tandem jumps and can include video and stills. Please call 937-372-0700 or stop in to purchase one.",
+    q25: "Are gift certificates available?",
+    a25: "Yes, gift certificates are available for tandem jumps and can include video and pictures. Please call 937-372-0700 or stop in to purchase one.",
     q26: "Is your airport “Dog Friendly”?",
     a26: "Sorry, we do not allow pets at the airport.",
     q27: "Does Skydive Greene County accept 1-800-Skyride certificates?",
-    a27: "NO! We do not accept 1-800-Skyride gi certificates. This is a middle man booking company that frequently charges far more then we charge for a skydive and have numerous complaints in against them with the BBB. We choose not to do business with others that harm consumers. We only accept gi certificates purchased though us.",
+    a27: "NO! We do not accept 1-800-Skyride gi certificates. This is a middle man booking company that frequently charges far more then we charge for a skydive and have numerous complaints in against them with the BBB. We choose not to do business with others that harm consumers. We only accept gift certificates purchased though us.",
 }
 
 const TandemJumper = () => {
@@ -108,15 +112,18 @@ export default class FAQ extends Component {
                 <h2 name="q1" className="FAQ">{TandemJumperQuestions.q1}</h2>
                 <p>{TandemJumperQuestions.a1}</p>
                 <h2 name="q2" className="FAQ">{TandemJumperQuestions.q2}</h2>
-                <p>{TandemJumperQuestions.a2}</p>
+                {/* <p>{TandemJumperQuestions.a2}</p> */}
+                <p>Just pick up the phone and call 937-372-0700. You can talk directly to our friendly and experienced staff that will answer all of your questions and make your appointment for your first tandem skydive. If you would rather, click <a className="contact-modal-link" href="mailto:info@skydiveohio.com">here</a> to email us.</p>
                 <h2 name="q3" className="FAQ">{TandemJumperQuestions.q3}</h2>
-                <p>{TandemJumperQuestions.a3}</p>
+                {/* <p>{TandemJumperQuestions.a3}</p> */}
+                <p>We require a tandem skydive as your first jump. After you make a tandem, you can then enroll in our static line course. A tandem skydive allows you to experience freefall and canopy flight while harnessed to an experienced instructor. This is required before enrolling in our static line program. During a static line jump, you will be taken up to 3,500 ft with a licensed jump master, and you will leave the aircraft attatched to the plane via a static line, which will pull your parachute for you. For more information regarding our static line program, click <Link to={'/firsttimejumpers'}>here.</Link></p>
                 <h2 name="q4" className="FAQ">{TandemJumperQuestions.q4}</h2>
                 <p>{TandemJumperQuestions.a4}</p>
                 <h2 name="q5" className="FAQ">{TandemJumperQuestions.q5}</h2>
                 <p>{TandemJumperQuestions.a5}</p>
                 <h2 name="q6" className="FAQ">{TandemJumperQuestions.q6}</h2>
-                <p>{TandemJumperQuestions.a6}</p>
+                {/* <p>{TandemJumperQuestions.a6}</p> */}
+                <p>The price for a tandem skydive is $175. This cost includes all the training, the plane ride to altitude, necessary equipment, the skydive, and your own logbook. For our full price list click <Link to={'/pricing'} onClick={() => window.scrollTo(0, 0)}>here!</Link></p>
                 <h2 name="q7" className="FAQ">{TandemJumperQuestions.q7}</h2>
                 <p>{TandemJumperQuestions.a7}</p>
                 <h2 name="q8" className="FAQ">{TandemJumperQuestions.q8}</h2>
@@ -132,7 +139,8 @@ export default class FAQ extends Component {
                 <h2 name="q13" className="FAQ">{TandemJumperQuestions.q13}</h2>
                 <p>{TandemJumperQuestions.a13}</p>
                 <h2 name="q14" className="FAQ">{TandemJumperQuestions.q14}</h2>
-                <p>{TandemJumperQuestions.a14}</p>
+                <p>Yes you can! You may purchase video and pictures individually, or as a bundle. All videos are edited and include a pre and post-jump interview, ride to altitude, freefall and the landing of your skydive. Please let us know if you want video, photos, or both when you schedule your skydive(s). For our full price list click <Link to={'/pricing'} onClick={() => window.scrollTo(0, 0)}>here.</Link></p>
+                {/* <p>{TandemJumperQuestions.a14}</p> */}
                 <h2 name="q15" className="FAQ">{TandemJumperQuestions.q15}</h2>
                 <p>{TandemJumperQuestions.a15}</p>
                 <h2 name="q16" className="FAQ">{TandemJumperQuestions.q16}</h2>
