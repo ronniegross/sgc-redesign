@@ -8,6 +8,7 @@
     "react-responsive-navbar": "^1.0.11",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
+    "react-scroll": "^1.7.11",
     "react-slideshow-image": "^1.1.8",
     "styled-components": "^4.2.0"
   },
