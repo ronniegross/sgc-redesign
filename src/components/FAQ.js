@@ -30,9 +30,9 @@ const FunJumperQuestions = {
     q30: "What are your hours of operation?",
     a30: "We are open seven days a week from 9:00am to sunset for your skydiving convenience.",
     q31: "Do you have an arial view of the DZ?",
-    a32: "Yes, you can find it here.",
-    q33: "Are you jumping today?",
-    a34: "Give us a call at 937-372-0700 and we'll gladly let you know who will be jumping.",
+    a31: "Yes, you can find it here.",
+    q32: "Are you jumping today?",
+    a32: "Give us a call at 937-372-0700 and we'll gladly let you know who will be jumping.",
 }
 
 const FunJumper = () => {
