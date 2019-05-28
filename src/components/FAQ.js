@@ -19,16 +19,16 @@ const Wrapper = styled.div`
 
 const FunJumperQuestions = {
     title: "Common Experienced Jumper Questions:",
-    q1: "Can I hire a packer?",
-    a1: "Yes! We have multiple packers available on the weekend.",
-    q2: "Do you use Burble?",
-    a2: "Yes we do. You can find us on Burble @skydivegreeneco.",
-    q3: "What are your hours of operation?",
-    a3: "We are open seven days a week from 9:00am to sunset for your skydiving convenience.",
-    q4: "Do you have an arial view of the DZ?",
-    a4: "Yes, you can find it here.",
-    q5: "Are you jumping today?",
-    a5: "Give us a call at 937-372-0700 and we'll gladly let you know who will be jumping.",
+    q28: "Can I hire a packer?",
+    a28: "Yes! We have multiple packers available on the weekend.",
+    q29: "Do you use Burble?",
+    a29: "Yes we do. You can find us on Burble @skydivegreeneco.",
+    q30: "What are your hours of operation?",
+    a30: "We are open seven days a week from 9:00am to sunset for your skydiving convenience.",
+    q31: "Do you have an arial view of the DZ?",
+    a32: "Yes, you can find it here.",
+    q33: "Are you jumping today?",
+    a34: "Give us a call at 937-372-0700 and we'll gladly let you know who will be jumping.",
 }
 
 const FunJumper = () => {
@@ -146,32 +146,34 @@ export default class FAQ extends Component {
                 <h2 name="q20" className="FAQ">{TandemJumperQuestions.q20}</h2>
                 <p>{TandemJumperQuestions.a20}</p>
                 <h2 name="q21" className="FAQ">{TandemJumperQuestions.q21}</h2>
+                <p>{TandemJumperQuestions.a21}</p>
+                <h2 name="q22" className="FAQ">{TandemJumperQuestions.q22}</h2>
                 <p>{TandemJumperQuestions.a22}</p>
-                <h2 name="q22" className="FAQ">{TandemJumperQuestions.q23}</h2>
+                <h2 name="q23" className="FAQ">{TandemJumperQuestions.q23}</h2>
                 <p>{TandemJumperQuestions.a23}</p>
-                <h2 name="q23" className="FAQ">{TandemJumperQuestions.q24}</h2>
+                <h2 name="q24" className="FAQ">{TandemJumperQuestions.q24}</h2>
                 <p>{TandemJumperQuestions.a24}</p>
-                <h2 name="q24" className="FAQ">{TandemJumperQuestions.q25}</h2>
+                <h2 name="q25" className="FAQ" >{TandemJumperQuestions.q25}</h2>
                 <p>{TandemJumperQuestions.a25}</p>
-                <h2 name="q25" className="FAQ" >{TandemJumperQuestions.q26}</h2>
+                <h2 name="q26" className="FAQ">{TandemJumperQuestions.q26}</h2>
                 <p>{TandemJumperQuestions.a26}</p>
-                <h2 name="q26" className="FAQ">{TandemJumperQuestions.q27}</h2>
+                <h2 name="q27" className="FAQ">{TandemJumperQuestions.q27}</h2>
                 <p>{TandemJumperQuestions.a27}</p>
                 <h1 className="faq-title">Common Experienced Jumper Questions</h1>
-                <h2 name="q1" className="FAQ">{FunJumperQuestions.q1}</h2>
-                <p>{FunJumperQuestions.a1}</p>
-                <h2 name="q2" className="FAQ">{FunJumperQuestions.q2}</h2>
-                <p>{FunJumperQuestions.a2}</p>
-                <h2 name="q3" className="FAQ">{FunJumperQuestions.q3}</h2>
-                <p>{FunJumperQuestions.a3}</p>
-                <h2 name="q4" className="FAQ">{FunJumperQuestions.q4}</h2>
-                <p>{FunJumperQuestions.a4}</p>
-                <h2 name="q5" className="FAQ">{FunJumperQuestions.q5}</h2>
-                <p>{FunJumperQuestions.a5}</p>
-                <h2 name="q6" className="FAQ">{FunJumperQuestions.q6}</h2>
-                <p>{FunJumperQuestions.a6}</p>
-                <h2 name="q7" className="FAQ">{FunJumperQuestions.q7}</h2>
-                <p>{FunJumperQuestions.a7}</p>
+                <h2 name="q28" className="FAQ">{FunJumperQuestions.q28}</h2>
+                <p>{FunJumperQuestions.a28}</p>
+                <h2 name="q29" className="FAQ">{FunJumperQuestions.q29}</h2>
+                <p>{FunJumperQuestions.a29}</p>
+                <h2 name="q30" className="FAQ">{FunJumperQuestions.q30}</h2>
+                <p>{FunJumperQuestions.a30}</p>
+                <h2 name="q31" className="FAQ">{FunJumperQuestions.q31}</h2>
+                <p>{FunJumperQuestions.a31}</p>
+                <h2 name="q32" className="FAQ">{FunJumperQuestions.q32}</h2>
+                <p>{FunJumperQuestions.a32}</p>
+                <h2 name="q33" className="FAQ">{FunJumperQuestions.q33}</h2>
+                <p>{FunJumperQuestions.a33}</p>
+                <h2 name="q34" className="FAQ">{FunJumperQuestions.q34}</h2>
+                <p>{FunJumperQuestions.a34}</p>
             </Wrapper>
         )
     }
