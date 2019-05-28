@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 60px 30px 30px 30px;
+    margin: 150px 30px 30px 30px;
 `
 
 export default class Footer extends Component {
