@@ -40,12 +40,12 @@ const Img = styled.img`
     position: absolute;
     z-index: 1;
     width: 350px;
-    left: -10px;
-    top: -60px;
+    left: 10px;
+    top: 10px;
     @media (max-width: 700px) {
         width: 200px;
-        left: -10px;
-        top: -30px;
+        left: 10px;
+        top: 10px;
     }
 `
 
@@ -56,7 +56,7 @@ export default class Header extends Component {
             <div className="header-container">
                 {/* <img className="header-pic" src="https://www.skydiveorange.com/wp-content/uploads/Tandem-Skydiving-Gift-Certificate-Skydive-Orange.jpg" alt="header-gif"></img> */}
                 {/* <Img className="SGCpng" src="https://i.imgur.com/tgBW84G.png" alt="sgc png"></Img> */}
-                <Img className="sgc-overlay" src="https://i.imgur.com/cOb6Ygr.png" alt="sgc png"></Img>
+                <Img className="sgc-overlay" src="https://i.imgur.com/RAsQWT1.png" alt="sgc png"></Img>
                 <StyledImage className="header-pic" src="https://i.imgur.com/dJWGdt3.jpg" alt="header-gif"></StyledImage>
             </div>
         )
