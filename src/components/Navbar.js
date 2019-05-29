@@ -258,7 +258,7 @@ export default class Navbar extends Component {
                         <li className="regular-nav-item"><Link to={'/experiencedjumpers'}>Experienced Jumpers</Link></li>
                         <li className="regular-nav-item"><Link to={'/pricing'}>Pricing</Link></li>
                         <li className="regular-nav-item"><Link to={'/FAQs'}>FAQs</Link></li>
-                        <li className="nav-button regular-nav-item"><Link to={'/bookaskydive'}>Book a Skydive</Link></li>
+                        <li className="nav-button regular-nav-item"><a href="https://bookings.burblesoft.com/index/7031/18" target="_blank" >Book a Skydive</a></li>
                         <li onClick={this.triggerContactModal} className="nav-button regular-nav-item">Contact</li>
                         {
                             this.state.contactModalDisplayed ? 
