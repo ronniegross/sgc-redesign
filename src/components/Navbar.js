@@ -82,7 +82,7 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        margin-bottom: 175px; 
+        margin-bottom: 200px; 
     }
     .mobile-menu a {
         color: #3D3D3D;
@@ -236,7 +236,7 @@ export default class Navbar extends Component {
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/experiencedjumpers'}>Experienced Jumpers</Link></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/pricing'}>Pricing</Link></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/FAQs'}>FAQs</Link></li>
-                                    <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/bookaskydive'}>Book a Skydive</Link></li>
+                                    <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><a href="https://bookings.burblesoft.com/index/7031/18" target="_blank">Book a Skydive</a></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/contact'}>Contact</Link></li>
                                     {/* <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/contact'}>Contact</Link></li> */}
                                     {/* <li onClick={this.toggleMobileDropDown}><Link to={'/'}> List of Resources </Link></li>

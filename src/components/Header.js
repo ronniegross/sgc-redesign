@@ -42,7 +42,7 @@ export default class Header extends Component {
         return (
             <div className="header-container">
                 {/* <img className="header-pic" src="https://www.skydiveorange.com/wp-content/uploads/Tandem-Skydiving-Gift-Certificate-Skydive-Orange.jpg" alt="header-gif"></img> */}
-                <StyledImage className="header-pic" src="https://skydivenorthwest.co.uk/wp-content/uploads/2014/07/sdnw-r6.jpg" alt="header-gif"></StyledImage>
+                <StyledImage className="header-pic" src="https://i.imgur.com/dJWGdt3.jpg" alt="header-gif"></StyledImage>
             </div>
         )
     }
