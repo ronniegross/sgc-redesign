@@ -36,12 +36,21 @@ const StyledImage = styled.img`
     padding: 0;
 `
 
+const Img = styled.img`
+    position: fixed;
+    z-index: 1;
+    width: 200px;
+    left: 20px;
+    top: 20px;
+`
+
 export default class Header extends Component {
 
     render() {
         return (
             <div className="header-container">
                 {/* <img className="header-pic" src="https://www.skydiveorange.com/wp-content/uploads/Tandem-Skydiving-Gift-Certificate-Skydive-Orange.jpg" alt="header-gif"></img> */}
+                {/* <Img className="SGCpng" src="https://i.imgur.com/tgBW84G.png" alt="sgc png"></Img> */}
                 <StyledImage className="header-pic" src="https://i.imgur.com/dJWGdt3.jpg" alt="header-gif"></StyledImage>
             </div>
         )
