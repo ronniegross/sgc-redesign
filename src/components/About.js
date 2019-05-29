@@ -25,13 +25,16 @@ const Wrapper = styled.div`
         margin-top: 30px;
     }
     .legend-title {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     a {
         text-decoration: none;
     }
     .pic-title {
         margin-bottom: 15px;
+    }
+    .history-container {
+        margin-top: 30px;
     }
     @media (max-width: 850px) {
         .quick-links-title {
@@ -101,9 +104,10 @@ export default class About extends Component {
                     <h1 className="pic-title">Pic of the Week</h1>
                     <Pic src="https://www.skydiveohio.com/wp-content/uploads/G0041216-2-1-3000x1734.jpg" alt="pic of the week"></Pic>
                     <h1 className="legend-title">The legend of Skydive Greene County</h1>
-                    <div className="slideshow-container">
+                    {/* <div className="slideshow-container">
                         <Slideshow />
-                    </div>
+                    </div> */}
+                    <Pic src="https://i.pinimg.com/originals/d6/ce/ed/d6ceede36d17c474de6cc9dca7d6db54.jpg" alt="the legend"></Pic>
                     <div className="history-container">
                         <p>Kogi truffaut dreamcatcher umami XOXO. Kitsch banh mi jean shorts twee, dreamcatcher sustainable snackwave direct trade health goth leggings hoodie truffaut. You probably haven't heard of them trust fund kickstarter humblebrag squid 90's poke beard typewriter kombucha shabby chic gastropub ennui shaman tumblr. Kogi pork belly iceland tote bag.
     
