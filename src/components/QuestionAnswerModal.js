@@ -13,10 +13,10 @@ const Wrapper = styled.div`
         width: 50%;
     } */
     h2 {
-        margin-top: 10px;
+        margin-top: 20px;
     }
     p {
-        margin-top: 4px;
+        margin: 4px 0 20px 0;
     }
     h1 {
         margin-bottom: 10px;
