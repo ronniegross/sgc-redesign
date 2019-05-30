@@ -239,7 +239,8 @@ export default class Navbar extends Component {
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/pricing'}>Pricing</Link></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/FAQs'}>FAQs</Link></li>
                                     <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><a href="https://bookings.burblesoft.com/index/7031/18" target="_blank">Book a Skydive</a></li>
-                                    <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/contact'}>Contact</Link></li>
+                                    <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><a href="mailto:info@skydiveohio.com">Contact</a></li>
+                                    {/* <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/contact'}>Contact</Link></li> */}
                                     {/* <li className="mobile-nav-item" onClick={this.toggleMobileDropDown} ><Link to={'/contact'}>Contact</Link></li> */}
                                     {/* <li onClick={this.toggleMobileDropDown}><Link to={'/'}> List of Resources </Link></li>
                                     <li onClick={this.toggleMobileDropDown}><Link to={'/map'}> Map </Link></li>
@@ -261,7 +262,8 @@ export default class Navbar extends Component {
                         <li className="regular-nav-item"><Link to={'/pricing'}>Pricing</Link></li>
                         <li className="regular-nav-item"><Link to={'/FAQs'}>FAQs</Link></li>
                         <li className="nav-button regular-nav-item"><a href="https://bookings.burblesoft.com/index/7031/18" target="_blank" >Book a Skydive</a></li>
-                        <li onClick={this.triggerContactModal} className="nav-button regular-nav-item">Contact</li>
+                        {/* <li onClick={this.triggerContactModal} className="nav-button regular-nav-item">Contact</li> */}
+                        <li className="nav-button regular-nav-item"><a href="mailto:info@skydiveohio.com">Contact</a></li>
                         {
                             this.state.contactModalDisplayed ? 
                                 <ContactModal />
