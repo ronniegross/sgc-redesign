@@ -200,11 +200,19 @@ export default class QuestionAnswerModal extends Component {
                                 <h2>{this.props.info.q10}</h2>
                                 <p>{this.props.info.a10}</p>
                             </div>
-                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view fewer
-                                {this.props.info.pricing ?
+                            <div className="question-answer">
+                                <h2>{this.props.info.q11}</h2>
+                                <p>{this.props.info.a11}</p>
+                            </div>
+                            <div className="question-answer">
+                                <h2>{this.props.info.q12}</h2>
+                                <p>{this.props.info.a12}</p>
+                            </div>
+                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view less
+                                {/* {this.props.info.pricing ?
                                     <p className="price-question"> prices</p>
                                     : <p className="price-question"> questions</p>
-                                }
+                                } */}
                             </p>
                         </div>
                         :
@@ -218,10 +226,10 @@ export default class QuestionAnswerModal extends Component {
                                 <p>{this.props.info.a2}</p>
                             </div>
                             <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view more
-                            {this.props.info.pricing ?
+                            {/* {this.props.info.pricing ?
                                     <p className="price-question"> prices</p>
                                     : <p className="price-question"> questions</p>
-                            }
+                            } */}
                             </p>
                         </div>
                 }

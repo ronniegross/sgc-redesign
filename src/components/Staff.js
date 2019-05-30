@@ -25,6 +25,9 @@ const StaffWrapper = styled.div`
     h2 {
         margin-top: 10px;
     }
+    p {
+        font-size: 14px;
+    }
 `
 
 export default class Staff extends Component {
@@ -36,22 +39,27 @@ export default class Staff extends Component {
                     <div className="staff-pic-container">
                         <img className="staff-pic" src="https://cdn.photofunia.com/effects/skydiver/examples/tga0n8_o.jpg" alt="Dennis" />
                         <h2>Dennis</h2>
+                        <p>Static Line Instructor</p>
                     </div>
                     <div className="staff-pic-container">
                         <img className="staff-pic" src="https://cdn.photofunia.com/effects/skydiver/examples/tga0n8_o.jpg" alt="Jim" />
                         <h2>Jim</h2>
+                        <p>Owner and Founder</p>
                     </div>
                     <div className="staff-pic-container">
                         <img className="staff-pic" src="https://cdn.photofunia.com/effects/skydiver/examples/tga0n8_o.jpg" alt="Mike" />
                         <h2>Mike</h2>
+                        <p>Pilot and Static Line Instructor</p>
                     </div>
                     <div className="staff-pic-container">
                         <img className="staff-pic" src="https://cdn.photofunia.com/effects/skydiver/examples/tga0n8_o.jpg" alt="Jeff" />
                         <h2>Jeff</h2>
+                        <p>Tandem Instructor</p>
                     </div>
                     <div className="staff-pic-container">
                         <img className="staff-pic" src="https://cdn.photofunia.com/effects/skydiver/examples/tga0n8_o.jpg" alt="Tiffany" />
                         <h2>Tiffany</h2>
+                        <p>Mainifest</p>
                     </div>
                 </StaffWrapper>
             </Wrapper>

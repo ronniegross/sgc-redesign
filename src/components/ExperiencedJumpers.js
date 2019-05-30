@@ -65,6 +65,7 @@ const Pic = styled.img`
 const PricingData = {
     title: "Pricing",
     pic: "https://www.skydivelongisland.com/images/article/Learn-to-Freefly.jpg",
+    pricing: true,
     q1: "12,500 ft - Westwind",
     a1: "$24.00",
     q2: "9,000 ft - Cessna 182",
@@ -83,23 +84,32 @@ const Pricing = () => {
     return <QuestionAnswerModal info={PricingData} />
 }
 
-const RulesData = {
-    title: "Rules",
+const InfoData = {
+    title: "General Information",
     pic: "https://i.imgur.com/dJWGdt3.jpg",
-    q1: "No Swooping",
-    a1: "Pilot Will Spot",
-    q2: "Question2",
-    a2: "Answer2",
-    q3: "Question3",
-    a3: "Answer3",
-    q4: "Question4",
-    a4: "Answer4",
-    q5: "Question5",
-    a5: "Answer5",
+    q1: "When are you open?",
+    a1: "We jump 7 days a week.",
+    q2: "Do you use burble?",
+    a2: "Yes! We are @skydivegreeneco.",
+    q3: "What can I expect at Skydive Greene County?",
+    a3: "Whether you like RW, freeflying, CRW,or accuracy, we have it all at Skydive Greene County. We have many jumpers who have been around for awhile and some new faces as well this year-we would love to have you be one of those!",
+    q4: "Where can I land?",
+    a4: "We have a main landing area of over 5 acres and an additional 10 acres as a secondary with hundreds of acres for safe outs if you do happen to land off the airport. Please ask to receive a complete area briefing if you are new to the dropzone area.",
+
+    // q3: "Question3",
+    // a3: "Answer3",
+    // q4: "Question4",
+    // a4: "Answer4",
+    q5: "Where can I pack?",
+    a5: "Our packing hanger easily will allow 40 people to pack at the same time. We provide rig racks for your convenience. In addition, we have packers who can pack your gear if you so desire. Located in the hanger are boxes of rubber bands, pull up cords and a canopy rack for canopy inspections. Limited power outlets are provided for charging your video camera or other small items.",
+    q6: "Do you offer gear storage?",
+    a6: "Limited numbers of storage areas are available on a seasonal renting schedule.",
+    q7: "Where can I get some grub?",
+    a7: "If you are hungry or thirsty, visit our delicious concession stand, located on just past the clubhouse between the hanger."
 }
 
 const Rules = () => {
-    return <QuestionAnswerModal info={RulesData} />
+    return <QuestionAnswerModal info={InfoData} />
 }
 
 export default class ExperiencedJumpers extends Component {
@@ -115,7 +125,7 @@ export default class ExperiencedJumpers extends Component {
                     </div>
                     <div>
                         <div className="rules skydive-info-box">
-                            <QuestionAnswerModal info={RulesData} />
+                            <QuestionAnswerModal info={InfoData} />
                         </div>
                     </div>
                 </div>
