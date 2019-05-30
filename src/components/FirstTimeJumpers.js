@@ -52,11 +52,11 @@ const TandemData = {
     a5: "Dress comfortably for the weather. Jeans or athletic clothes, and gym shoes are ideal. Shorts are also acceptable on warmer days. No sandals, flip-flops, cowboy boots or any shoes with hooks on them. You will not be permitted to jump without shoes.",
     q6: "What can I expect?",
     a6: "After filling out paperwork and watching a short video you will be ready to make your skydive. Somewhere around 11,500 feet you will be harnessed to your tandem instructor, the door will open and you will exit the plane.",
-    a7: "Your freefall with your instructor will last for approximately 40-50 seconds. We can almost guarantee this will be the most exciting minute of your life as you reach speeds of around 120 mph as you fall for nearly two miles back to Earth!",
+    a7: "Your freefall with your instructor will last for approximately 40-50 seconds. We can almost guarantee this will be the most exciting minute of your life as you reach speeds of around 120 mph as you fall for nearly two miles back to earth!",
     a8: "When you reach opening altitude, your instructor will deploy your parachute made for two and you will glide you back to the landing area taking in the beautiful sites along the way.",
     a9: "For an added charge, you are able to capture the spectacular skydive you just made by having one of our great camera flyers film your adventure. Our camera flyers will put together a professionally edited video of your jump. Our videos include pre and post jump interviews, the ride to altitude, your freefall, and your landing.",
     a10: "If you have additional questions, please call us at (937) 372-0700 or visit our Frequently Asked Questions Page!",
-    a11: "Once you have made your tandem you move on to our Static Line Program. Check out our pricing page for more info, and don’t forget to have a video taken of your skydive to show all those that didn’t think you would jump from a perfectly good airplane!",
+    a11: "Once you have made your tandem skydive, you are able to move on to our Static Line Program. Check out our pricing page for more info!",
 }
 
 const Tandem = () => {
