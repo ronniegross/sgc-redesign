@@ -44,6 +44,7 @@ const Wrapper = styled.div`
     .navbar-toggle {
         display: none;
         width: 30px;
+        /* margin-bottom: 10px; */
         /* margin: 30px 0 30px 0; */
         /* margin: 0 auto; */
         /* padding: 30px 0 30px 0; */
@@ -94,6 +95,7 @@ const Wrapper = styled.div`
     }
     .mobile-menu-container {
         display: none;
+        margin-bottom: 10px;
     }
     @media (max-width: 1100px) {
         li {
