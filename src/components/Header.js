@@ -47,6 +47,11 @@ const Img = styled.img`
         left: 10px;
         top: 10px;
     }
+    @media (max-width: 475px) {
+        width: 150px;
+        left: 10px;
+        top: 10px;
+    }
 `
 
 export default class Header extends Component {
