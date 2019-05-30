@@ -65,16 +65,18 @@ const Pic = styled.img`
 const PricingData = {
     title: "Pricing",
     pic: "https://www.skydivelongisland.com/images/article/Learn-to-Freefly.jpg",
-    q1: "Low Pass",
-    a1: "Marfa VHS chicharrones ugh tumeric. Knausgaard irony slow",
-    q2: "Regular",
-    a2: "Answer2",
-    q3: "Question3",
-    a3: "Answer3",
-    q4: "Question4",
-    a4: "Answer4",
-    q5: "Question5",
-    a5: "Answer5",
+    q1: "12,500 ft - Westwind",
+    a1: "$24.00",
+    q2: "9,000 ft - Cessna 182",
+    a2: "$20.00",
+    q3: "5,500 ft - Westwind",
+    a3: "$17.00",
+    q4: "3,500 ft - Cessna 182",
+    a4: "$14.00",
+    q5: "Reserve Repack",
+    a5: "$75.00",
+    q6: "Gear Rental",
+    a6: "$??.00",
 }
 
 const Pricing = () => {

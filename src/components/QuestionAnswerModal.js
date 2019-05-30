@@ -17,6 +17,7 @@ const Wrapper = styled.div`
     }
     p {
         margin: 4px 0 20px 0;
+        max-width: 600px;
     }
     h1 {
         margin-bottom: 10px;
@@ -27,6 +28,9 @@ const Wrapper = styled.div`
     .price-question {
         display: inline;
     }
+    /* .question-answer {
+        max-width: 600px;
+    } */
 `
 
 const Pic = styled.img`
@@ -175,6 +179,26 @@ export default class QuestionAnswerModal extends Component {
                             <div className="question-answer">
                                 <h2>{this.props.info.q5}</h2>
                                 <p>{this.props.info.a5}</p>
+                            </div>
+                            <div className="question-answer">
+                                <h2>{this.props.info.q6}</h2>
+                                <p>{this.props.info.a6}</p>
+                            </div>
+                            <div className="question-answer">
+                                <h2>{this.props.info.q7}</h2>
+                                <p>{this.props.info.a7}</p>
+                            </div>
+                            <div className="question-answer">
+                                <h2>{this.props.info.q8}</h2>
+                                <p>{this.props.info.a8}</p>
+                            </div>
+                            <div className="question-answer">
+                                <h2>{this.props.info.q9}</h2>
+                                <p>{this.props.info.a9}</p>
+                            </div>
+                            <div className="question-answer">
+                                <h2>{this.props.info.q10}</h2>
+                                <p>{this.props.info.a10}</p>
                             </div>
                             <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view fewer
                                 {this.props.info.pricing ?
