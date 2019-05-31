@@ -42,9 +42,9 @@ export default class Staff extends Component {
                         <p>Static Line Instructor</p>
                     </div>
                     <div className="staff-pic-container">
-                        <img className="staff-pic" src="https://cdn.photofunia.com/effects/skydiver/examples/tga0n8_o.jpg" alt="Jim" />
-                        <h2>Jim</h2>
-                        <p>Owner and Founder</p>
+                        <img className="staff-pic" src="https://i.imgur.com/TPGMhWJ.jpg" alt="Damien" />
+                        <h2>Damien, the packer formally known as Skylar</h2>
+                        <p>Packer</p>
                     </div>
                     <div className="staff-pic-container">
                         <img className="staff-pic" src="https://cdn.photofunia.com/effects/skydiver/examples/tga0n8_o.jpg" alt="Mike" />
