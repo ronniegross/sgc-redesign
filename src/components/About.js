@@ -102,7 +102,7 @@ export default class About extends Component {
                     {/* <div className="slideshow-container">
                         <Slideshow />
                     </div> */}
-                    <Pic src="https://i.pinimg.com/originals/d6/ce/ed/d6ceede36d17c474de6cc9dca7d6db54.jpg" alt="the legend"></Pic>
+                    <Pic src="https://i.imgur.com/MqRrjVS.jpg" alt="the legend"></Pic>
                     <div className="history-container">
                         <p>Kogi truffaut dreamcatcher umami XOXO. Kitsch banh mi jean shorts twee, dreamcatcher sustainable snackwave direct trade health goth leggings hoodie truffaut. You probably haven't heard of them trust fund kickstarter humblebrag squid 90's poke beard typewriter kombucha shabby chic gastropub ennui shaman tumblr. Kogi pork belly iceland tote bag.
 
