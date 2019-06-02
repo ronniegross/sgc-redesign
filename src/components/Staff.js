@@ -5,7 +5,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     .staff-title {
-        margin-top: 35px;
+        margin: 35px 0 20px 0;
     }
 `
 
