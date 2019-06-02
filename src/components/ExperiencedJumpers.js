@@ -58,7 +58,7 @@ const Wrapper = styled.div`
 
 const Pic = styled.img`
     width: 90%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 `
 
@@ -89,8 +89,8 @@ const InfoData = {
     pic: "https://i.imgur.com/dJWGdt3.jpg",
     q1: "When are you open?",
     a1: "We jump 7 days a week.",
-    q2: "Do you use burble?",
-    a2: "Yes! We are @skydivegreeneco.",
+    q2: "Do you use Burble?",
+    a2: "At this time, we only use Burble for booking tandem skydives.",
     q3: "What can I expect at Skydive Greene County?",
     a3: "Whether you like RW, freeflying, CRW,or accuracy, we have it all at Skydive Greene County. We have many jumpers who have been around for awhile and some new faces as well this year-we would love to have you be one of those!",
     q4: "Where can I land?",
@@ -131,19 +131,30 @@ export default class ExperiencedJumpers extends Component {
                 </div>
                 <h1 className="aircraft-title title">Aircraft</h1>
                 <div className="pic-holder">
-                    <Pic src="https://skydivekc.com/images/site/Skydiving-Aircraft.jpg" alt="aircraft"></Pic>
+                    <Pic src="https://i.imgur.com/DAAqWXu.jpg" alt="aircraft"></Pic>
                 </div>
                 <div className="text-holder">
-                <p className="aircraft-facilities-text">Lorem ipsum dolor amet cloud bread artisan vinyl bicycle rights. Air plant la croix yuccie, kickstarter VHS williamsburg readymade bushwick cornhole beard tumeric tbh. Distillery pok pok vape tousled paleo messenger bag. Narwhal iceland adaptogen, vape chillwave actually tousled synth crucifix kogi raw denim meh. Health goth PBR&B hell of tilde portland fixie artisan hexagon polaroid tattooed bitters. Kogi microdosing helvetica pug crucifix craft beer.
-                </p>
+                    <p className="aircraft-facilities-text">King Air</p>
                 </div>
-                <h1 className="facilities-title title">Facilities</h1>
                 <div className="pic-holder">
-                    <Pic src="https://www.skydiveohio.com/wp-content/uploads/2013/01/packing_hanger.jpg" alt="amenities"></Pic>
+                    <Pic src="https://i.imgur.com/MqRrjVS.jpg" alt="aircraft"></Pic>
+                </div>
+                <div className="text-holder">
+                    <p className="aircraft-facilities-text">Westwind Turbin Beechcraft</p>
+                </div>
+                <div className="pic-holder">
+                    <Pic src="https://i.imgur.com/7jVHfoM.jpg" alt="aircraft"></Pic>
+                </div>
+                <div className="text-holder">
+                    <p className="aircraft-facilities-text">Cessna 182</p>
+                </div>
+                {/* <h1 className="facilities-title title">Facilities</h1>
+                <div className="pic-holder">
+                    <Pic src="https://i.imgur.com/Lp5LZjU.jpg" alt="facilities"></Pic>
                 </div>
                 <div className="text-holder">
                 <p className="aircraft-facilities-text"> 3 wolf moon umami godard, street art everyday carry poutine tumblr unicorn keffiyeh try-hard. Fanny pack live-edge seitan lomo kinfolk cred, enamel pin blog chambray disrupt gentrify. Hoodie mustache chillwave selfies, humblebrag air plant asymmetrical umami banh mi snackwave. Tumeric williamsburg polaroid, raw denim small batch hoodie jianbing meggings sartorial.</p>
-                </div>
+                </div> */}
             </Wrapper>
         )
     }

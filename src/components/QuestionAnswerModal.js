@@ -24,6 +24,7 @@ const Wrapper = styled.div`
     }
     .view-more-prices {
         margin-top: 15px;
+
     }
     .price-question {
         display: inline;
@@ -31,6 +32,12 @@ const Wrapper = styled.div`
     /* .question-answer {
         max-width: 600px;
     } */
+    .view-more {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
 `
 
 const Pic = styled.img`
@@ -208,12 +215,14 @@ export default class QuestionAnswerModal extends Component {
                                 <h2>{this.props.info.q12}</h2>
                                 <p>{this.props.info.a12}</p>
                             </div>
-                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view less
+                            <div className="view-more">
+                                <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view less
                                 {/* {this.props.info.pricing ?
                                     <p className="price-question"> prices</p>
                                     : <p className="price-question"> questions</p>
                                 } */}
-                            </p>
+                                </p>
+                            </div>
                         </div>
                         :
                         <div className="two-questions">
@@ -225,12 +234,14 @@ export default class QuestionAnswerModal extends Component {
                                 <h2>{this.props.info.q2}</h2>
                                 <p>{this.props.info.a2}</p>
                             </div>
-                            <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view more
+                            <div className="view-more">
+                                <p onClick={this.triggerViewMorePrices} className="view-more-prices">Click to view more
                             {/* {this.props.info.pricing ?
                                     <p className="price-question"> prices</p>
                                     : <p className="price-question"> questions</p>
                             } */}
-                            </p>
+                                </p>
+                            </div>
                         </div>
                 }
             </Wrapper>

@@ -48,11 +48,11 @@ export default class Staff extends Component {
                         <h2>Dennis</h2>
                         <p>Static Line Instructor</p>
                     </div>
-                    <div className="staff-pic-container">
+                    {/* <div className="staff-pic-container">
                         <img className="staff-pic" src="https://i.imgur.com/TPGMhWJ.jpg" alt="Damien" />
                         <h2>Damon</h2>
                         <p>The packer formally known as Skylar</p>
-                    </div>
+                    </div> */}
                     <div className="staff-pic-container">
                         <img className="staff-pic" src="https://cdn.photofunia.com/effects/skydiver/examples/tga0n8_o.jpg" alt="Mike" />
                         <h2>Mike</h2>
