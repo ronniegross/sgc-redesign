@@ -140,7 +140,7 @@ export default class ExperiencedJumpers extends Component {
                     <Pic src="https://i.imgur.com/MqRrjVS.jpg" alt="aircraft"></Pic>
                 </div>
                 <div className="text-holder">
-                    <p className="aircraft-facilities-text">Westwind Turbin Beechcraft</p>
+                    <p className="aircraft-facilities-text">Westwind Turbine Beechcraft</p>
                 </div>
                 <div className="pic-holder">
                     <Pic src="https://i.imgur.com/7jVHfoM.jpg" alt="aircraft"></Pic>
