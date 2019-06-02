@@ -88,7 +88,7 @@ const StaticLine = () => {
 
 const FunJumperPricingData = {
     title: "Experienced Jumper",
-    pic: "https://www.skydivelongisland.com/images/article/Learn-to-Freefly.jpg",
+    pic: "https://i.imgur.com/dJWGdt3.jpg",
     pricing: true,
     bigTile: true,
     q1: "12,500 ft - Westwind",
