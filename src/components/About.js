@@ -104,16 +104,11 @@ export default class About extends Component {
                     </div> */}
                     <Pic src="https://i.imgur.com/MqRrjVS.jpg" alt="the legend"></Pic>
                     <div className="history-container">
-                        <p>Kogi truffaut dreamcatcher umami XOXO. Kitsch banh mi jean shorts twee, dreamcatcher sustainable snackwave direct trade health goth leggings hoodie truffaut. You probably haven't heard of them trust fund kickstarter humblebrag squid 90's poke beard typewriter kombucha shabby chic gastropub ennui shaman tumblr. Kogi pork belly iceland tote bag.
+                        <p>Skydive Greene County is located in Xenia, Ohio since 1961 just outside of the greater Dayton-Miami Valley area and is within a reasonable driving distance of major metropolitan areas including Cincinnati, Columbus, Cleveland, Richmond, Indianapolis, and Indiana.
 
-                        Next level cronut church-key activated charcoal kickstarter, snackwave put a bird on it forage tbh pinterest bitters deep v raclette. Artisan mlkshk lumbersexual chillwave mumblecore, vape cliche cronut sustainable cold-pressed lo-fi paleo. Palo santo beard taiyaki next level umami gluten-free direct trade tousled salvia selvage pour-over tattooed bushwick sustainable. Pabst wolf kale chips freegan +1, jianbing VHS street art coloring book roof party cloud bread master cleanse banjo meh vaporware.
+                            From the second you arrive at our Drop Zone, to the moment you leave you will feel an excitement like never before. The excitement of SKYDIVING!!!
 
-                        Marfa VHS chicharrones ugh tumeric. Knausgaard irony slow-carb, adaptogen fanny pack fixie whatever. DIY subway tile yr, keffiyeh seitan godard everyday carry actually food truck microdosing swag cloud bread master cleanse adaptogen kale chips. Yr salvia small batch, etsy brunch selfies normcore XOXO copper mug actually roof party yuccie keytar.
-
-                        Ramps keytar squid umami polaroid fixie. Etsy narwhal gochujang godard heirloom, tote bag meggings 90's man bun af kogi. Snackwave organic vexillologist, ennui raw denim prism 90's dreamcatcher coloring book. Neutra brooklyn raw denim succulents. Crucifix irony truffaut godard enamel pin. VHS 90's kinfolk, hot chicken vape taiyaki drinking vinegar photo booth synth gastropub shaman adaptogen. Drinking vinegar lumbersexual austin cold-pressed, blog brooklyn meh tilde.
-
-                        Actually retro wayfarers, tousled meh subway tile flexitarian messenger bag williamsburg migas keytar. Chartreuse food truck viral gastropub kogi etsy swag raw denim selfies. Cred portland 8-bit banjo, bushwick letterpress roof party thundercats gentrify cliche pok pok subway tile tumblr viral VHS. Mumblecore fanny pack taxidermy, chicharrones neutra small batch gentrify disrupt heirloom green juice try-hard. Sriracha chartreuse lo-fi snackwave. 8-bit gastropub kombucha semiotics.</p>
-
+                            Located on a private airport, Skydive Greene County offers a large landing area, a covered hanger for packing, rigging services, and a great staff for tandem skydives, students, and experienced skydivers.</p>
                     </div>
                     <h1 className="pic-title">Pic of the Week</h1>
                     <Pic src="https://i.imgur.com/25lYGz7.jpg" alt="pic of the week"></Pic>
