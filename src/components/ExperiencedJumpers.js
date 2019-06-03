@@ -64,7 +64,7 @@ const Pic = styled.img`
 
 const PricingData = {
     title: "Pricing",
-    pic: "https://i.imgur.com/sHqWUmV.jpg",
+    pic: "https://i.imgur.com/td1cdHS.jpg",
     pricing: true,
     q1: "12,500 ft - Westwind",
     a1: "$24.00",
