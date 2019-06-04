@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 
 const TandemData = {
     title: "Tandem Skydive",
-    pic: "https://i.imgur.com/9qb0AjD.jpg",
+    pic: "https://i.imgur.com/G3HzYzM.jpg",
     pricing: true,
     q1: "Single Jumper",
     a1: "$175",
