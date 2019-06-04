@@ -64,7 +64,7 @@ const Pic = styled.img`
 
 const PricingData = {
     title: "Pricing",
-    pic: "https://i.imgur.com/td1cdHS.jpg",
+    pic: "https://i.imgur.com/yOCBSH3.jpg",
     pricing: true,
     q1: "12,500 ft - Westwind",
     a1: "$24.00",
@@ -150,10 +150,10 @@ export default class ExperiencedJumpers extends Component {
                 </div>
                 <h1 className="facilities-title title">Facilities</h1>
                 <div className="pic-holder">
-                    <Pic src="https://i.imgur.com/yfUjak1.png" alt="facilities"></Pic>
+                    <Pic src="https://i.imgur.com/W0TPZ8N.png" alt="facilities"></Pic>
                 </div>
                 <div className="text-holder">
-                <p className="aircraft-facilities-text"> 3 wolf moon umami godard, street art everyday carry poutine tumblr unicorn keffiyeh try-hard. Fanny pack live-edge seitan lomo kinfolk cred, enamel pin blog chambray disrupt gentrify. Hoodie mustache chillwave selfies, humblebrag air plant asymmetrical umami banh mi snackwave. Tumeric williamsburg polaroid, raw denim small batch hoodie jianbing meggings sartorial.</p>
+                <p className="aircraft-facilities-text">We provide a packing hanger with boxes of rubberbands, pullup cords, and a canopy rack for inspections. Limited power outlets are provided for charging your video camera or other small items.</p>
                 </div>
             </Wrapper>
         )

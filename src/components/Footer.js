@@ -7,6 +7,9 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin: 150px 30px 30px 30px;
+    h1 {
+        color: #2A6523;
+    }
 `
 
 export default class Footer extends Component {
