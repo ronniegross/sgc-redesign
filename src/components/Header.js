@@ -62,7 +62,7 @@ export default class Header extends Component {
                 {/* <img className="header-pic" src="https://www.skydiveorange.com/wp-content/uploads/Tandem-Skydiving-Gift-Certificate-Skydive-Orange.jpg" alt="header-gif"></img> */}
                 {/* <Img className="SGCpng" src="https://i.imgur.com/tgBW84G.png" alt="sgc png"></Img> */}
                 <Img className="sgc-overlay" src="https://i.imgur.com/RAsQWT1.png" alt="sgc png"></Img>
-                <StyledImage className="header-pic" src="https://i.imgur.com/M74b8lu.png" alt="header-gif"></StyledImage>
+                <StyledImage className="header-pic" src="https://i.imgur.com/G4HA5fD.jpg" alt="header-gif"></StyledImage>
             </div>
         )
     }

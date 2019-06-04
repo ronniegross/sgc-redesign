@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 `
 const TandemData = {
     title: "Tandem Skydive",
-    pic: "https://skydiveparacletexp.com/wp-content/uploads/2016/11/DSC04180.jpg",
+    pic: "https://i.imgur.com/MZ6Eorb.jpg",
     q1: "What is a tandem skydive?",
     a1: "Tandem skydiving is an exhilarating, easy, low stress way to make your first jump and is the most widely used method of skydiving across the United States. Our tandem training method involves you being harnessed to one of our highly trained and skilled tandem instructors rated by United Parachute Technologies as well as the United States Parachute Association.",
     q2: "How much does it cost?",
