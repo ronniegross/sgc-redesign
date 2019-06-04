@@ -65,7 +65,7 @@ const Pic = styled.img`
         height: 300px;
     }
     @media (max-width: 400px) {
-        width: 230px;
+        width: 270px;
         height: 150px;
         /* margin: 0 100px 0 0; */
     }
