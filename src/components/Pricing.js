@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 
 const TandemData = {
     title: "Tandem Skydive",
-    pic: "https://skydiveparacletexp.com/wp-content/uploads/2016/11/DSC04180.jpg",
+    pic: "https://i.imgur.com/9qb0AjD.jpg",
     pricing: true,
     q1: "Single Jumper",
     a1: "$175",
